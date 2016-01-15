@@ -76,13 +76,6 @@
             </div>
         </div>
     </div>
-<!-- We have chosen to use the fetcher rather than general hook for this template to get the ordering correct.
-    <div class="row">
-        <div class="col-sm-12">
-            <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-        </div>
-    </div>
--->
     <div class="row">
         <div class="col-sm-12">
             <ul class="pager">

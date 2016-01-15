@@ -1,0 +1,17 @@
+// Add your custom CSS here
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #f7ba61;
+}
+
+.container {
+	background: #fff;
+}
+
+.navbar{
+    background: #a1c5ab;	
+}

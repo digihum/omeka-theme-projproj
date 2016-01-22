@@ -138,4 +138,13 @@ body {
     background: #a1c5ab;	
 }
 
-#primary-navigation .nav { margin: 5px 0;} //center the navbar
+#primary-navigation .nav { margin: 5px 0;} /*center the navbar */
+
+.nav-tabs > li.active > a {background-color: white;}
+
+#waypoints {
+	overflow-y: visible;
+}
+#waypoints .dropdown-menu {
+	width: 200px;
+}

@@ -143,8 +143,9 @@ body {
 .nav-tabs > li.active > a {background-color: white;}
 
 #waypoints {
-	overflow-y: visible;
+
 }
-#waypoints .dropdown-menu {
-	width: 200px;
+#neatline #waypoints {
+    overflow-y: visible;
+	max-width: 400px;
 }

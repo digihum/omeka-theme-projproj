@@ -98,9 +98,6 @@
                 <div class="collapse navbar-collapse" id="primary-navigation">
                     <?php echo public_nav_main_bootstrap(); ?>
 
-                    <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-                        <?php echo search_form(array('show_advanced' => false)); ?>
-                    </form>
                 </div>
            </nav> 
          

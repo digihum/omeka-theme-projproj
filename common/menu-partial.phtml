@@ -1,4 +1,4 @@
-<ul class="nav nav-pills navbar-left">
+<ul class="nav nav-pills">
     <?php $count = 0 ?>
     <?php foreach ($this->container as $page): ?>
         <?php if( ! $page->isVisible() || !$this->navigation()->accept($page)) continue; ?>
@@ -30,4 +30,8 @@
         <?php endif; ?>
         <?php $count++ ?>
     <?php endforeach; ?>
+<!-- put something to catch frontpage only here -->
+                    <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
+                        <?php echo search_form(array('show_advanced' => false)); ?>
+                    </form>
 </ul>

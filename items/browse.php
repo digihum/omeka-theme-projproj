@@ -1,73 +1,74 @@
-<?php
-    $pageTitle = __('Browse Items');
-    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
-?>
+<?php $pageTitle = __('Browse Items'); echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
-    <h1><?php echo 'Browse all items'; ?></h1>
-    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
-    <hr>    
+<!-- item/browse.php -->
 
-    <div class="browse-items">
-        <?php if ($total_results > 0): ?>
-        <?php
-            $sortLinks[__('Title')] = 'Dublin Core,Title';
-            $sortLinks[__('Creator')] = 'Dublin Core,Creator';
-            ?>
-            <div class="browse-items-header hidden-xs">
-                <div class="row">
-                    <div class="col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-2">
-                        <?php echo browse_sort_links(array('Title'=>'Dublin Core,Title'), array('')); ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Creator'), array('')); ?>
-                    </div>
-                    <div class="hidden-sm col-md-2">
-                        Subject
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        Description
-                    </div>
-                </div>
-            </div>
-        
-            <?php foreach (loop('items') as $item): ?>
-            <div class="item">
-                <div class="row">
-                    <div class="col-sm-2 col-md-2">
-                        <?php $image = $item->Files; ?>
-                        <?php if ($image) {
-                                echo link_to_item('<div style="background-image: url(' . file_display_url($image[0], 'original') . ');" class="img"></div>');
-                            } else {
-                                echo link_to_item('<div style="background-image: url(' . img('defaultImage@2x.jpg') . ');" class="img"></div>');
-                            }
-                        ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
-                    </div>
-                    <div class="hidden-sm col-md-2">
-                        <?php echo metadata('item', array('Dublin Core', 'Subject')); ?>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <?php echo metadata('item', array('Dublin Core', 'Description'), array('snippet'=>150)); ?>
-                    </div>
-                
-                    <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
-                </div>
-            </div>
-            <?php endforeach; ?>
-            <div id="outputs">
-                <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
-                <?php echo output_format_list(false); ?>
-            </div>
-        <?php else : ?>
-            <p><?php echo 'No items added, yet.'; ?></p>
-        <?php endif; ?>
+<div class="row">
+   <div class="page-header">
+    <div class="col-xs-12">
+	    <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
     </div>
-    <?php echo pagination_links(); ?>
+    <nav class="col-md-6">
+        <div class="items-nav navigation" id="secondary-nav">
+	        <?php echo public_nav_items(); ?>
+	    </div>
+	</nav>
+    <div class="col-md-6">
+		<?php echo item_search_filters(); ?>
+    	<div id="pagination-top"><?php echo pagination_links(); ?></div>
+    </div>
+   </div>
+ </div><hr/>
+    <div class="item hentry" >
+     <div class="row">
+    <?php foreach (loop('items') as $item): ?>
+       <div class="col-xs-12 col-md-6" style="min-height:200px">
+
+        <?php if (metadata('item', 'has thumbnail')): ?>
+        <div class="item-img">
+            <?php echo link_to_item(item_image('square_thumbnail')); ?>
+        </div>
+        <br />
+        <?php endif; ?>
+
+        <div class="item-meta">
+
+        <h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h3>
+
+        <?php echo metadata('item', array('Dublin Core', 'Date')); ?>
+
+        <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
+        <div class="item-description">
+            <?php echo $description; ?>
+        </div>
+        <?php endif; ?>
+
+
+        <?php if (metadata('item', 'has tags')): ?>
+        <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
+            <?php echo tag_string('items'); ?></p>
+        </div>
+        <?php endif; ?>
+
+        <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
+
+        </div><!-- end class="item-meta" -->
+       </div>
+
+    <?php endforeach; ?>
+      </div>
+    </div><!-- end class="item hentry" -->
+    <hr/>
+    <div class="col-md-6">
+		<div id="outputs">
+		    <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
+		    <?php echo output_format_list(false, ' | '); ?>
+		</div>
+	</div>
+    <div class="col-md-6">
+    	<div id="pagination-bottom"><?php echo pagination_links(); ?></div>
+	</div>
+</div><!-- end primary -->
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
+
 <?php echo foot(); ?>

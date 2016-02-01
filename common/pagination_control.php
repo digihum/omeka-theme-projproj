@@ -1,47 +1,29 @@
-<?php if ($this->pageCount > 1): $getParams = $_GET; ?>
+<?php if ($this->pageCount > 1): ?>
+<nav>
 <ul class="pagination">
-    <?php if (isset($this->previous)): ?>
-        <li>
-            <?php $getParams['page'] = $previous; ?>
-            <a rel="prev" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>">&laquo;</a>
-        </li>
-    <?php endif; ?>
-
-    <li class="page-input">
-        <form action="<?php echo html_escape($this->url()); ?>" method="get" accept-charset="utf-8">
-        <?php
-            $hiddenParams = array();
-            $entries = explode('&', http_build_query($getParams));
-            foreach ($entries as $entry) {
-                if(!$entry) {
-                    continue;
-                }
-                list($key, $value) = explode('=', $entry);
-                $hiddenParams[urldecode($key)] = urldecode($value);
-            }
-        
-            foreach($hiddenParams as $key => $value) {
-                if($key != 'page') {
-                    echo $this->formHidden($key,$value);
-                }
-            }
-        
-            // Manually create this input to allow an omitted ID
-            $pageInput = '<input type="text" name="page" title="'
-                        . html_escape(__('Current Page'))
-                        . '" value="'
-                        . html_escape($this->current) . '">';
-            echo __('%s of %s', $pageInput, $this->last);
-        ?>
-        </form>
+    
+    <?php if ($this->first != $this->current): ?>
+    <!-- First page link --> 
+    <li>
+    <a href="<?php echo html_escape($this->url(array('page' => $this->first), null, $_GET)); ?>"><?php echo __('&laquo; First'); ?></a>
     </li>
-
-    <?php if (isset($this->next)): ?>
-        <li>
-            <?php $getParams['page'] = $next; ?>
-            <a rel="next" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>">&raquo;</a>
-        </li>
+    <?php endif; ?>
+        
+    <!-- Numbered page links -->
+    <?php foreach ($this->pagesInRange as $page): ?> 
+    <?php if ($page != $this->current): ?>
+    <li><a href="<?php echo html_escape($this->url(array('page' => $page), null, $_GET)); ?>"><?php echo $page; ?></a></li>
+    <?php else: ?>
+    <li class="active"><a href="#"><?php echo $page; ?></a></li>
+    <?php endif; ?>
+    <?php endforeach; ?>
+    
+    <?php if ($this->last != $this->current): ?>
+    <!-- Last page link --> 
+    <li>
+    <a href="<?php echo html_escape($this->url(array('page' => $this->last), null, $_GET)); ?>"><?php echo __('Last &raquo;'); ?></a>
+    </li>
     <?php endif; ?>
 </ul>
-
+</nav>
 <?php endif; ?>

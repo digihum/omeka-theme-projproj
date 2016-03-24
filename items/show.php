@@ -1,9 +1,9 @@
 <?php 
     echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show'));
 ?>
-
     <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
-
+    <div class="row">
+    <div class="col-sm-8">
     <div class="row">
         <div class="col-sm-12">
             <ul class="nav nav-tabs" role="tablist">
@@ -32,10 +32,15 @@
                             <h3><?php echo __('Clip'); ?></h3>
                             <div class="element-text"><?php echo files_for_item(); ?></div>
                         </div>
-
                     <?php endif; ?> 
 
-                    <?php echo get_specific_plugin_hook_output('ItemRelations','public_items_show', array('view' => $this, 'item' => $item)); ?>    
+                                            <!-- The following returns all of the files associated with an item. -->
+                    <?php if (metadata('item', array('Item Type Metadata','Transcription'))): ?>
+                        <div id="itemTranscript" class="element">
+                            <a class="btn btn-success btn-xs" data-toggle="collapse" data-target="#showTranscript"><?php echo __('Show Transcript'); ?></a>
+                            <div id="showTranscript" class="element-text collapse"><?php echo metadata('item', array('Item Type Metadata','Transcription')); ?></div>
+                        </div>
+                    <?php endif; ?> 
 
                         <!-- The following prints a list of all tags associated with the item -->
                         <?php if (metadata('item', 'has tags')): ?>
@@ -78,10 +83,23 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
+	<?php CommentingPlugin::showComments(); ?>
+	</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+
+                    <?php echo get_specific_plugin_hook_output('ItemRelations','public_items_show', array('view' => $this, 'item' => $item)); ?>    
+
+    </div>
+    <div class="">
+        <div class="col-sm-12">
             <ul class="pager">
                 <li class="previous"><?php echo link_to_previous_item_show(); ?></li>
                 <li class="next"><?php echo link_to_next_item_show(); ?></li>
             </ul>
         </div>
+    </div>
+
     </div>
 <?php echo foot(); ?>

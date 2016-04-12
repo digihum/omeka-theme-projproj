@@ -1,4 +1,3 @@
-
     <?php
         if(!empty($comment->author_name)) {
             if(empty($comment->author_url)) {

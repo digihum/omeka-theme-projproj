@@ -6,27 +6,36 @@
     <p class="lead"><?php echo metadata('collection', array('Dublin Core', 'Description')) ?></p>
 
     <div id="collection-items">
+
                 <?php if (metadata('collection', 'total_items') > 0): ?>
             <?php foreach (loop('items') as $item): ?>
-            <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
-            <div class="item hentry">
-                <h3><?php echo link_to_item($itemTitle, array('class'=>'permalink')); ?></h3>
+                            <hr/>
+                <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
+
+                <h3><?php echo $itemTitle; ?></h3>
     
-                <?php if (metadata('item', 'has thumbnail')): ?>
-                <div class="item-img">
-                    <?php echo link_to_item(item_image('square_thumbnail', array('alt' => $itemTitle))); ?>
-                </div>
-                <?php endif; ?>
-    
-                <?php if ($text = metadata('item', array('Item Type Metadata', 'Text'), array('snippet'=>250))): ?>
-                <div class="item-description">
-                    <p><?php echo $text; ?></p>
-                </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+
+                <?php if ($text = metadata('item', array('Item Type Metadata', 'Text'))): ?>
+                    <div class="item-description">
+                        <p><?php echo $text; ?></p>
+                    </div>
                 <?php elseif ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
-                <div class="item-description">
-                    <?php echo $description; ?>
-                </div>
+                    <div class="item-description">
+                        <?php echo $description; ?>
+                    </div>
+                    <div class="news-footer">
+                        <p>Posted on <?= metadata('item', array('Dublin Core', 'Date')) ?>, by <?= metadata('item', array('Dublin Core', 'Publisher')) ?>.</p>
+                    </div>
                 <?php endif; ?>
+
+                <?php if (metadata('item', 'has thumbnail')): ?>
+                    <div class="col-xs-12 col-md-4">
+                        <?php echo link_to_item(item_image('fullsize', array('alt' => $itemTitle,'class' => 'full-width'))); ?>
+                    </div>
+                <?php endif; ?>
+                </div>
             </div>
             <?php endforeach; ?>
         <?php else: ?>
@@ -34,5 +43,4 @@
         <?php endif; ?>
     </div><!-- end collection-items -->
 
-<?php fire_plugin_hook('public_collections_show', array('view' => $this, 'collection' => $collection)); ?>
 <?php echo foot(); ?>

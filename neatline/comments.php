@@ -2,9 +2,9 @@
 <div class='comment-section col-xs-12'>
     <?php $label = get_option('commenting_comments_label'); ?>
     <?php if ($label == ''):?>
-        <h2><?php echo sizeof($comments) . " " . ((sizeof($comments) == 1) ? __('Comment' ): __('Comments' )) ; ?></h2>
+        <h3><a data-target="#comment-form" data-toggle="collapse"><?php echo sizeof($comments) . " " . ((sizeof($comments) == 1) ? __('Comment' ): __('Comments' )) ; ?></a></h3>
     <?php else: ?>
-        <h2><?php echo $label; ?></h2>
+        <h3><a data-target="#comment-form" data-toggle="collapse" ><?php echo $label; ?></a></h2>
     <?php endif; ?>
     <div id='comments-flash'><?php echo flash(true); ?></div>
     <?php echo fire_plugin_hook('commenting_prepend_to_comments', array('comments' =>$comments)); ?>

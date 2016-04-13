@@ -43,3 +43,4 @@ width: 100%
     max-height: initial;
 }
 
+#comment-form, .comment-reply {display: none !important}

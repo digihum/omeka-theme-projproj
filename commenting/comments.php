@@ -12,12 +12,12 @@
     <ul class="media-list">
         <?php if($threaded) :?>
             <li id="comment-<?php echo $comment->id; ?>" class='media <?php if($comment->flagged):?>comment-flagged<?php endif;?>'>
-            <?php echo $this->partial('threaded-comments.php', array('comments' => $comments, 'parent_id'=>null)); ?>
+            <?php echo $this->partial('commenting/threaded-comments.php', array('comments' => $comments, 'parent_id'=>null)); ?>
             </li>
         <?php else: ?>
             <?php foreach($comments as $comment): ?>
             <li id="comment-<?php echo $comment->id; ?>" class='media<?php if($comment->flagged):?>comment-flagged<?php endif;?> '>
-                <?php echo $this->partial('comment.php', array('comment' => $comment)); ?>
+                <?php echo $this->partial('commenting/comment.php', array('comment' => $comment)); ?>
             </li>
             <?php endforeach; ?>
         <?php endif; ?>

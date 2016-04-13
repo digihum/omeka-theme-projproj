@@ -149,3 +149,22 @@ body {
     overflow-y: visible;
 	max-width: 400px;
 }
+
+#comment-form-body {width:100%;}
+#flash ul, ul.error {
+    padding-left: 0;
+}
+
+#flash li, ul.error li {
+    width:100%;
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#flash li.success {
+    background-color: #dff0d8;
+}
+ul.error li {
+    background-color: #f2dede;
+}

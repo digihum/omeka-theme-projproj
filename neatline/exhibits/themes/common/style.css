@@ -1,11 +1,25 @@
-body, #neatline{
-	background-color: #222; //just take the edge off black.
+body.neatline #neatline{
+	background-color: #222 !important; //just take the edge off black.
+}
+
+@media (max-width: 48em) {
+    #OpenLayers_Control_PanZoom_2 { display: none;}
+    #static-bubble { left:20px !important; }
+}
+
+@media (max-width: 46em) {
+        #static-bubble { top: 90px !important; height:70% !important;}
+    #waypoints {top: 0 !important;}
+}
+
+@media (max-width: 26em) {
+    #static-bubble { left:0 !important;}
 }
 
 #static-bubble .html5media-player audio {
 width: 100%
 }
-
+will 
 #static-bubble h3 {
 	font-size: 130%
 }

@@ -1,0 +1,29 @@
+version: '2'
+services:
+  # neatline has problems with mysql 5.7, so use 5.6
+  db:
+    image: mysql:5.6
+    volumes:
+     - /var/lib/mysql
+     - ./.docker-scripts/sql:/docker-entrypoint-initdb.d
+    restart: always
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db1
+
+  apache:
+    depends_on:
+      - db
+    image: omeka-ext-dev
+    links:
+      - db
+    ports:
+      - "3003:80"
+      - "3004:443"
+      - "9001:9000"
+    volumes:
+      - .:/var/www/html/themes/projproj
+    environment:
+      XDEBUG_CONFIG: xdebug.remote_connect_back=1

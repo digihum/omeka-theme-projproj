@@ -15,10 +15,6 @@
     public_array_sort_by_column($items, 'added',SORT_DESC);
     endif; ?>
 
-
-
-?>
-
                 <?php if (metadata('collection', 'total_items') > 0): ?>
                     <?php foreach (loop('items', $items) as $item): ?>
                                     <hr/>

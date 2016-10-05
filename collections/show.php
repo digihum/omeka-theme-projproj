@@ -16,6 +16,8 @@
                                     <hr/>
                         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
 
+                        <small>Published <?php echo  metadata('item', array('Dublin Core', 'Date')) ?></small>
+                        
                         <h3><?php echo $itemTitle; ?></h3>
             
                     <div class="row">

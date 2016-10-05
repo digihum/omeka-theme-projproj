@@ -10,9 +10,17 @@
     <?php 
     if (metadata('collection',array('Dublin Core','Title'))=="News and Events") : # only show twitter feed on news page?> 
         <div class="col-xs-12 col-md-8">
-    <?php endif; ?>
+    <?php 
+    # Sort by Added column descending
+    public_array_sort_by_column($items, 'added',SORT_DESC);
+    endif; ?>
+
+
+
+?>
+
                 <?php if (metadata('collection', 'total_items') > 0): ?>
-                    <?php foreach (loop('items') as $item): ?>
+                    <?php foreach (loop('items', $items) as $item): ?>
                                     <hr/>
                         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
 

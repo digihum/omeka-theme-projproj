@@ -169,6 +169,10 @@ ul.error li {
     background-color: #f2dede;
 }
 
+.element-text {
+    margin-top: 10.5px;
+}
+
 .feature-vpb {
     background: url('../images/vpb_frontpage_sm.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; min-height: 340px;    margin-right: auto;
     margin-left: auto;

@@ -89,7 +89,12 @@
         <div class="row" id="header">
             <div class="col-xs-12">
                 <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-                <h1 class="site-title"><?php echo link_to_home_page(theme_logo()); ?></h1>
+                <h1 class="site-title"><?php echo link_to_home_page(theme_logo()); ?>
+
+                <!-- to be removed by Jan 2018 -->
+                <small class="beta"><sup>Beta</sup></small>
+
+                </h1>
             </div>
         </div>
         <div class="row">

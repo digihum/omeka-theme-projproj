@@ -1,45 +1,66 @@
-body.neatline #neatline{
-	background-color: #222 !important; //just take the edge off black.
+body.neatline #neatline {
+    background-color: #222 !important; //just take the edge off black.
 }
 
 @media (max-width: 48em) {
-    #OpenLayers_Control_PanZoom_2 { display: none;}
-    #static-bubble { left:20px !important; }
+    #OpenLayers_Control_PanZoom_2 {
+        display: none;
+    }
+    #static-bubble {
+        left: 20px !important;
+    }
 }
 
 @media (max-width: 46em) {
-        #static-bubble { top: 90px !important; height:70% !important;}
-    #waypoints {top: 0 !important;}
+    #static-bubble {
+        top: 90px !important;
+        height: 70% !important;
+    }
+    #waypoints {
+        top: 0 !important;
+    }
 }
 
 @media (max-width: 26em) {
-    #static-bubble { left:0 !important;}
+    #static-bubble {
+        left: 0 !important;
+    }
 }
 
 #static-bubble .html5media-player audio {
-width: 100%
+    width: 100%
 }
-will 
+
 #static-bubble h3 {
-	font-size: 130%
+    font-size: 130%
+}
+
+#static-bubble a.btn-block {
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .nl-fullscreen {
     position: absolute;
     z-index: 1000;
     background: white;
-    margin-left:-25px;
+    margin-left: -25px;
     opacity: .9;
 }
-.nl-fullscreen span.glyphicon{
+
+.nl-fullscreen span.glyphicon {
     margin: 5px;
 }
 
-#static-bubble.selected {opacity: 1}
-#static-bubble, #neatline-narrative {
+#static-bubble.selected {
+    opacity: 1
+}
+
+#static-bubble,
+#neatline-narrative {
     overflow-y: auto;
     position: absolute;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 0px;
     color: #000;
     padding: 1em;
@@ -51,10 +72,13 @@ will
 }
 
 #neatline-narrative {
-	display:none; //hidden whilst this is sorted
-	overflow: hidden;
-	z-index: 999;
+    display: none; //hidden whilst this is sorted
+    overflow: hidden;
+    z-index: 999;
     max-height: initial;
 }
 
-#comment-form, .comment-reply {display: none !important}
+#comment-form,
+.comment-reply {
+    display: none !important
+}

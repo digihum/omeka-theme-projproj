@@ -1,6 +1,8 @@
 // Add your custom CSS here
-
-.access-info {position: absolute; left: -9999em;}
+.access-info {
+    position: absolute;
+    left: -9999em;
+}
 
 #masthead.transparent {
     color: #383838;
@@ -25,9 +27,11 @@
     display: none;
 }
 
-#warwick-logo-container, #utility-container {
+#warwick-logo-container,
+#utility-container {
     line-height: 26px;
 }
+
 #warwick-logo-container {
     margin-left: 8px;
     height: 26px;
@@ -42,12 +46,15 @@
     background-position: 0 0;
     -webkit-background-size: 136px 26px;
     background-size: 136px 26px;
-    display:block;
+    display: block;
     width: 136px;
     height: 26px;
 }
 
-#warwick-logo-link, #warwick-site-links, #utility-bar, #search-container {
+#warwick-logo-link,
+#warwick-site-links,
+#utility-bar,
+#search-container {
     display: inline-block;
     zoom: 1;
     vertical-align: middle;
@@ -57,17 +64,19 @@
     margin-left: 8px;
     display: inline-block;
     opacity: 0;
-        zoom: 1;
+    zoom: 1;
     vertical-align: middle;
 }
 
-#warwick-site-links ul, #utility-bar ul {
+#warwick-site-links ul,
+#utility-bar ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-#warwick-site-links ul li, #utility-bar ul li {
+#warwick-site-links ul li,
+#utility-bar ul li {
     display: inline-block;
     zoom: 1;
     list-style: none;
@@ -97,7 +106,7 @@
     line-height: 25px;
     border: 1px solid #ccc;
     width: 173px;
-        outline: none;
+    outline: none;
     -webkit-appearance: none !important;
     -webkit-border-radius: 0px;
 }
@@ -110,7 +119,7 @@
     background: url(../images/search-images.png) no-repeat 0px 0px;
     -webkit-appearance: none !important;
     -webkit-border-radius: 0px;
-        font-size: inherit;
+    font-size: inherit;
     line-height: 19px;
     height: 19px;
     vertical-align: bottom;
@@ -120,7 +129,10 @@
     background-color: #632f53;
 }
 
-.site-title, .site-title a {color: #f7ba61;}
+.site-title,
+.site-title a {
+    color: #f7ba61;
+}
 
 img {
     max-width: 100%;
@@ -131,32 +143,43 @@ body {
 }
 
 .container {
-	background: #fff;
+    background: #fff;
 }
 
-.navbar{
-    background: #a1c5ab;	
+.navbar {
+    background: #a1c5ab;
 }
 
-#primary-navigation .nav { margin: 5px 0;} /*center the navbar */
-
-.nav-tabs > li.active > a {background-color: white;}
-
-#waypoints {
-
+#primary-navigation .nav {
+    margin: 5px 0;
 }
+
+
+/*center the navbar */
+
+.nav-tabs>li.active>a {
+    background-color: white;
+}
+
+#waypoints {}
+
 #neatline #waypoints {
     overflow-y: visible;
-	max-width: 400px;
+    max-width: 400px;
 }
 
-#comment-form-body {width:100%;}
-#flash ul, ul.error {
+#comment-form-body {
+    width: 100%;
+}
+
+#flash ul,
+ul.error {
     padding-left: 0;
 }
 
-#flash li, ul.error li {
-    width:100%;
+#flash li,
+ul.error li {
+    width: 100%;
     display: block;
     padding: 10px;
     margin-top: 5px;
@@ -165,6 +188,7 @@ body {
 #flash li.success {
     background-color: #dff0d8;
 }
+
 ul.error li {
     background-color: #f2dede;
 }
@@ -174,16 +198,22 @@ ul.error li {
 }
 
 .feature-vpb {
-    background: url('../images/vpb_frontpage_sm.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; min-height: 340px;    margin-right: auto;
+    background: url('../images/vpb_frontpage_sm.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 340px;
+    margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px; 
+    padding-right: 15px;
     padding-top: 160px;
     padding-bottom: 15px;
 }
 
 .feature-vpb .static-bubble {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .feature-vpb .static-bubble .content.body {
@@ -191,10 +221,16 @@ ul.error li {
     padding: 20px;
 }
 
-.feature-vpb a.btn-primary{
-    opacity: 1;background-color: #572949;color: #fff;font-size: 120%;text-shadow: none; overflow-wrap: break-word; overflow-x: hidden;
+.feature-vpb a.btn-primary {
+    opacity: 1;
+    background-color: #572949;
+    color: #fff;
+    font-size: 120%;
+    text-shadow: none;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
 }
-.feature-vpb h3
-{
+
+.feature-vpb h3 {
     margin-top: 0px;
 }

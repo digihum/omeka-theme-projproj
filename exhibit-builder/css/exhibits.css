@@ -1,0 +1,85 @@
+.exhibit-item-caption {
+    font-size: 0.8em;
+    margin-bottom: 1.2em !important;
+}
+
+#exhibit-blocks ul {
+    margin-left: 1em;
+}
+
+#exhibit-pages {
+    padding-left: 0;
+}
+
+#exhibit-page-navigation {
+    clear: both;
+    width: 100%;
+    margin: 1em 0;
+    line-height: 1.2;
+}
+
+#exhibit-pages h4 {
+    font-weight: bold
+}
+
+
+#exhibit-pages .list-group-item.active, #exhibit-pages .list-group-item.active:hover, #exhibit-pages .list-group-item.active:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #ccc;
+    border-color: #ccc;
+
+}
+
+#exhibit-nav-prev {
+    float: left;
+    text-align: left;
+}
+
+#exhibit-page-navigation div.btn-primary a {
+    color: #fff;
+    text-shadow: none; 
+
+}
+
+#exhibit-nav-next {
+    float: right;
+    text-align: right;
+}
+
+#exhibit-nav-up {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.exhibit-block {
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.exhibit-block:last-child {
+    margin-bottom: 0;
+}
+
+.exhibit-items img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+.exhibit-item-link {
+    display: block;
+}
+
+.exhibit-item-link,
+.download-file {
+    vertical-align: top;
+    display: block;
+}
+
+.exhibit-item-link *,
+.download-file * {
+    vertical-align: top;
+}
+

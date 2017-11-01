@@ -1,0 +1,36 @@
+
+footer {
+    background-color: rgba(89, 89, 89, 1.0) !important;
+    color: #E9E9E9;
+}
+
+footer a {
+    color: #E9E9E9
+}
+
+footer nav, footer .partners h4 {
+    margin-top: 50px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer #warwick_w {
+    width: 100px
+}
+
+footer #statement {
+    margin-top: 20px;
+}
+
+footer .partners .row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+footer .partners .partner {
+  padding-right: 5px;
+  padding-left: 5px;
+}

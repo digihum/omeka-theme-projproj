@@ -1,5 +1,7 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
+<?php queue_css_file('frontpage-vpb'); ?>
+<h1>Hello!</h1>
 <?php echo get_theme_option('Homepage About'); ?>
 <div class="row">
     <div class="col-sm-4">

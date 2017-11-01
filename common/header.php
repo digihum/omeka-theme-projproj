@@ -25,6 +25,10 @@
         queue_css_file('lib/bootstrap.min');
         queue_css_file('bootstrap-custom');
         queue_css_file('style');
+        queue_css_file('header');
+        queue_css_file('footer');
+        queue_css_file('frontpage-vpb');
+
         echo head_css();
     ?>
 
@@ -52,6 +56,7 @@
       ga('send', 'pageview');
 
     </script>
+    <div class="id7-left-border"></div>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <header role="banner" class="container">
     <div id="masthead" class="transparent">
@@ -61,40 +66,27 @@
             </div>
             <div id="warwick-logo-container" class="on-hover">
               <a id="warwick-logo-link" href="http://www2.warwick.ac.uk" title="University of Warwick home page"></a>
-                  <div id="warwick-site-links" style="display: inline-block; opacity: 0;">
-                    <ul>
-                      <li><a href="http://www2.warwick.ac.uk/study">Study</a></li>
-                      <li class="spacer">|</li>
-                      <li><a href="http://www2.warwick.ac.uk/research">Research</a></li>
-                      <li class="spacer">|</li>
-                      <li><a href="http://www2.warwick.ac.uk/business">Business</a></li>
-                      <li class="spacer">|</li>
-                      <li><a href="http://www2.warwick.ac.uk/alumni">Alumni</a></li>
-                      <li class="spacer">|</li>
-                      <li><a href="http://www2.warwick.ac.uk/newsandevents">News</a></li>
-                      <li class="spacer">|</li>
-                      <li><a href="http://www2.warwick.ac.uk/about">About</a></li>
-                    </ul>
-                  </div>
-                
             </div>
-        <div id="utility-container"> 
+        <div id="utility-container" class="hidden-xs"> 
             <div id="search-container">
-                <form action="//search.warwick.ac.uk/website"><input type="hidden" name="urlPrefix" value="http://www2.warwick.ac.uk/fac/arts/film/research/current/theprojectionproject/">
-                   <input autocomplete="off" id="search-box" class="large" placeholder="Search Projection Project" name="q"><input alt="Search" id="search-button" type="image" src="/themes/projproj/images/search-images.png" title="Click here to search">
-                </form>
+                <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
+                        <?php echo search_form(array('show_advanced' => false)); ?>
+                    </form>
               </div>
             </div>
         </div>
         <div class="row" id="header">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-sm-8">
                 <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
                 <h1 class="site-title"><?php echo link_to_home_page(theme_logo()); ?>
-
-                <!-- to be removed by Jan 2018 -->
-                <small class="beta"><sup>Beta</sup></small>
-
                 </h1>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <nav id="top-nav" class="container-fluid">
+                    <div class="row">
+                    <ul class="nav navbar-nav navbar-right navbar-primary"><li class="nav col-sm-12 col-xs-6"><a href="about">About the Project</a></li><li class="nav col-sm-12 col-xs-6"><a href="news_and_events">News & Events</a></li></ul>
+    </div>
+                </nav>
             </div>
         </div>
         <div class="row">
@@ -108,6 +100,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <span class="navbar-brand" href="#">Collections</span>
                 </div>
 
                 <div class="collapse navbar-collapse" id="primary-navigation">

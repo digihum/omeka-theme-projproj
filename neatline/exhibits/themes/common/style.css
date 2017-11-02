@@ -84,6 +84,13 @@ body.neatline #neatline {
 }
 
 
+/* audio tags */
+
+audio {
+    width: 100%
+}
+
+
 /* Adding glyphicons */
 
 @font-face {

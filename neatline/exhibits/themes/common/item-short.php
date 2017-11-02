@@ -13,7 +13,7 @@
 <!-- Link. -->
 <div class="more-link">
 <?php echo link_to(
-  get_current_record('item'), 'show', 'More detail on this content', ['class' => 'btn btn-warning btn-block']
+  get_current_record('item'), 'show', 'Technical Details', ['class' => 'btn btn-warning btn-block']
 ); ?>
 
 <?php CommentingPlugin::showComments(); 

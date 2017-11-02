@@ -9,7 +9,7 @@
 <!-- "View Fullscreen" link: -->
 <div class="pull-right">
 <?php echo nl_getExhibitLink(
-  null, 'fullscreen', __('<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>'), array('class' => 'nl-fullscreen ', 'aria-label' => 'Full Screen')
+  null, 'fullscreen', __('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>'), array('class' => 'nl-fullscreen ', 'aria-label' => 'Close')
 ); ?>
 </div>
 <!-- Exhibit and description : -->

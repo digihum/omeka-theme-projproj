@@ -1,4 +1,3 @@
-
 .access-info {
     position: absolute;
     left: -9999em;
@@ -154,14 +153,22 @@ div#search-container form.navbar-form {
 }
 
 #top-nav {
-    margin: 0.2em
+    #margin: 0.2em
+}
+
+.navbar-primary {
+    min-width: 21em;
+    text-align: center;
 }
 
 #primary-navigation .nav {
     margin: 5px 0;
 }
 
-.nav > li > a:hover {background: rgba(255,255,255,0.2)}
+.nav>li>a:hover {
+    background: rgba(255, 255, 255, 0.2)
+}
+
 
 /*center the navbar */
 

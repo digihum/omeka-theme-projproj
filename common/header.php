@@ -22,7 +22,7 @@
 
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
-        queue_css_file('lib/bootstrap.min');
+        ##queue_css_file('lib/bootstrap.min');
         queue_css_file('bootstrap-custom');
         queue_css_file('style');
         queue_css_file('header');
@@ -84,7 +84,7 @@
             <div class="col-xs-12 col-sm-4">
                 <nav id="top-nav" class="container-fluid">
                     <div class="row">
-                    <ul class="nav navbar-nav navbar-right navbar-primary"><li class="nav col-sm-12 col-xs-6"><a href="about">About the Project</a></li><li class="nav col-sm-12 col-xs-6"><a href="news_and_events">News & Events</a></li></ul>
+                    <ul class="nav navbar-nav navbar-right navbar-primary"><li class="nav col-sm-6 col-xs-6"><a href="about">About the Project</a></li><li class="nav col-sm-6 col-xs-6"><a href="news_and_events">News & Events</a></li></ul>
     </div>
                 </nav>
             </div>

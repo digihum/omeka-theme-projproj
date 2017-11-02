@@ -1,4 +1,4 @@
-<div class="item record <?php if ($tweet){ echo "col-md-6" } ?>">
+<div class="item record <?php if ($tweet){ echo "col-md-6"; } ?>">
     <?php
     $title = metadata($item, array('Dublin Core', 'Title'));
     $description = metadata($item, array('Dublin Core', 'Description'));

@@ -1,4 +1,4 @@
-<div class="item record">
+<div class="item record <?php if ($tweet){ echo "col-md-6" } ?>">
     <?php
     $title = metadata($item, array('Dublin Core', 'Title'));
     $description = metadata($item, array('Dublin Core', 'Description'));
@@ -14,14 +14,16 @@
     <small>Published <?php echo  metadata($item, array('Dublin Core', 'Date')) ?></small>
 
     <div class="row">
-        <div class="col-xs-12 col-md-8">
 
-            <?php if ($text = metadata($item, array('Item Type Metadata', 'Text'))): ?>
+
+        <?php if ($text = metadata($item, array('Item Type Metadata', 'Text'))): ?>
+            <div class="col-xs-12 col-md-8">
                 <div class="item-description">
                     <p><?php echo $text; ?></p>
                 </div>
-            <?php endif; ?>
-            <?php if ($tweet): ?>
+        <?php endif; ?>
+        <?php if ($tweet): ?>
+            <div class="col-xs-12 col-md-6">
                 <p class="item-tweet"><?php echo $tweet; ?></p>
             <?php endif; ?>
             

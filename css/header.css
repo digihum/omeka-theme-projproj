@@ -144,8 +144,34 @@ div#search-container form.navbar-form {
     color: #f7ba61;
 }
 
-.navbar {
-    background: #a1c5ab;
+@media screen and (min-width: 768px) {
+    .site-title a {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+#top-nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .site-title a {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        font-size: 30px;
+    }
+    .site-title {
+        margin: 0.2em;
+    }
+    #top-nav {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #top-nav .navbar-primary {
+        margin: 0 15px;
+    }
 }
 
 #top-nav a {
@@ -153,7 +179,11 @@ div#search-container form.navbar-form {
 }
 
 #top-nav {
-    #margin: 0.2em
+    margin: 0.2em;
+}
+
+.navbar {
+    background: #a1c5ab;
 }
 
 .navbar-primary {

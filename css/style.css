@@ -49,6 +49,11 @@ ul.error li {
     margin-top: 10.5px;
 }
 
+main#content>.container {
+    padding-bottom: 1em;
+}
+
+
 /*
 @media (min-width: 768px) {
     .id7-right-border {

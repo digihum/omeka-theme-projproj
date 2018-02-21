@@ -137,6 +137,9 @@ body#home h2 {
   font-size: 3em;
   margin: 1rem 0; }
 
+body#home svg {
+  z-index: -800; }
+
 body#home main#content {
   position: relative;
   padding: 1em 0; }
@@ -147,6 +150,9 @@ body#home main#content {
     position: absolute;
     top: 0;
     z-index: -999; }
+
+body#home section {
+  margin-bottom: 4rem; }
 
 body#home section#archives .featured-images {
   display: flex; }
@@ -177,16 +183,22 @@ body#home section#tours {
       body#home section#tours .featured-images .bottom div img {
         width: 100%; }
 
+body#home section#quote p {
+  font-size: 2rem;
+  font-weight: lighter; }
+
 body#home section#vpb {
   display: flex;
   position: relative; }
   body#home section#vpb .description {
     flex: 1; }
-  body#home section#vpb .featured-images div {
-    flex: 1;
-    padding: 0.5em; }
-    body#home section#vpb .featured-images div img {
-      width: 100%; }
+  body#home section#vpb .featured-images {
+    flex: 1; }
+    body#home section#vpb .featured-images div {
+      flex: 1;
+      padding: 0.5em; }
+      body#home section#vpb .featured-images div img {
+        width: 100%; }
 
 body {
   margin: 0; }

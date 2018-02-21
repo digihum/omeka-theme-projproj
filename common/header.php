@@ -8,7 +8,7 @@
         <meta name="description" content="<?php echo $description; ?>" />
     <?php endif; ?>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 
 
     <!-- Will build the page <title> -->

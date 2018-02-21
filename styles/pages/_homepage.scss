@@ -52,6 +52,10 @@ body#home {
     margin: 1rem 0;
   }
 
+  svg {
+    z-index: -800;
+  }
+
   main#content {
     position: relative;
     padding: 1em 0;
@@ -68,6 +72,10 @@ body#home {
       top: 0;
       z-index: -999;
     }
+  }
+
+  section {
+    margin-bottom: 4rem;
   }
 
   section#archives {
@@ -112,17 +120,27 @@ body#home {
     }
   }
 
+  section#quote {
+    p {
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+  }
+
   section#vpb {
     display: flex;
     position: relative;
     .description {
       flex: 1;
     }
-    .featured-images div {
+    .featured-images {
       flex: 1;
-      padding: 0.5em;
-      img {
-        width: 100%;
+      div {
+        flex: 1;
+        padding: 0.5em;
+        img {
+          width: 100%;
+        }
       }
     }
   }

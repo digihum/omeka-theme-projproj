@@ -1,0 +1,19 @@
+{
+  "name": "omeka-theme-projproj",
+  "version": "1.0.0",
+  "description": "Omeka Starter Theme\r ===================",
+  "main": "index.js",
+  "scripts": {
+    "style": "node-sass ./styles/app.scss  --output ./css --include-path ./node_modules/bootstrap-sass/assets/stylesheets/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@actechlab.warwick.ac.uk:digital-humanities/omeka-theme-projproj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

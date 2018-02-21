@@ -134,7 +134,6 @@ body#home section#tours {
     flex: 1;
     text-align: right; }
   body#home section#tours .featured-images {
-    display: flex;
     flex: 1; }
     body#home section#tours .featured-images .top {
       display: flex; }
@@ -148,6 +147,16 @@ body#home section#tours {
       padding: 0.5em; }
       body#home section#tours .featured-images .bottom div img {
         width: 100%; }
+
+body#home section#vpb {
+  display: flex; }
+  body#home section#vpb .description {
+    flex: 1; }
+  body#home section#vpb .featured-images div {
+    flex: 1;
+    padding: 0.5em; }
+    body#home section#vpb .featured-images div img {
+      width: 100%; }
 
 body {
   margin: 0; }

@@ -83,7 +83,6 @@ body#home {
       text-align: right;
     }
     .featured-images {
-      display: flex;
       flex: 1;
       .top {
         display: flex;
@@ -103,6 +102,20 @@ body#home {
         }
       }
       
+    }
+  }
+
+  section#vpb {
+    display: flex;
+    .description {
+      flex: 1;
+    }
+    .featured-images div {
+        flex: 1;
+        padding: 0.5em;
+        img {
+          width: 100%
+        }    
     }
   }
 }

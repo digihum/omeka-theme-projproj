@@ -49,6 +49,30 @@
     </div>
 </section>
 
+<section id="quote">
+    <p>When you were about to throw the film onto the screen when it was 35mm, there
+    was always that little heart-missing-a-beat moment. You’d think, ‘Is it all going to come
+    together? Is it going to be the right way? Is it going to be in rack? Is the sound going
+    to be right?’ And then when it’s correct, then you can relax. It was exciting.
+    </p>
+</section>
+
+<section id="vpb">
+    <div class="featured-images">
+        <div>
+            <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        </div>      
+    </div>
+    <div class="description">
+        <h2>VIRTUAL PROJECTION BOX</h2>
+        <p>Over 80 audio clips from projectionists and
+        commentary from the research team to be
+        uncovered as you explore the interactive
+        Virtual Projection Box.</p>
+        <a href='#'>Explore the projection box >></a>
+    </div>
+</section>
+<!--
 <h1>Hello!</h1>
 <?php echo get_theme_option('Homepage About'); ?>
 <div class="row">
@@ -79,5 +103,5 @@
     
     <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
 </div>
-
+-->
 <?php echo foot(); ?>

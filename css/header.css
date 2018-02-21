@@ -1,0 +1,207 @@
+.access-info {
+    position: absolute;
+    left: -9999em;
+}
+
+#masthead.transparent {
+    color: #383838;
+    background-color: #fff;
+}
+
+#masthead {
+    height: 50px;
+    background: #06456e;
+    color: white;
+    position: relative;
+    z-index: auto;
+    white-space: nowrap;
+    -webkit-transition: background-color 0.2s linear 0s;
+    -moz-transition: background-color 0.2s linear 0s;
+    -ms-transition: background-color 0.2s linear 0s;
+    -o-transition: background-color 0.2s linear 0s;
+    transition: background-color 0.2s linear 0s;
+}
+
+#masthead .icon-container {
+    display: none;
+}
+
+#warwick-logo-container,
+#utility-container {
+    line-height: 26px;
+}
+
+#warwick-logo-container {
+    margin-left: 8px;
+    height: 26px;
+    position: relative;
+    z-index: auto;
+    top: 12px;
+}
+
+#warwick-logo-link {
+    background-image: url(../images/logotype-colour.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 136px 26px;
+    background-size: 136px 26px;
+    display: block;
+    width: 136px;
+    height: 26px;
+}
+
+#warwick-logo-link,
+#warwick-site-links,
+#utility-bar,
+#search-container {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+div#search-container form.navbar-form {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#search-container .navbar-form .form-control,
+#search-container .navbar-form .btn {
+    height: 2em;
+    line-height: 1;
+}
+
+#warwick-site-links {
+    margin-left: 8px;
+    display: inline-block;
+    opacity: 0;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+#warwick-site-links ul,
+#utility-bar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#warwick-site-links ul li,
+#utility-bar ul li {
+    display: inline-block;
+    zoom: 1;
+    list-style: none;
+    list-style-type: inherit;
+}
+
+#utility-container {
+    position: absolute;
+    z-index: auto;
+    right: 0px;
+    margin-right: 8px;
+    height: 26px;
+    top: 12px;
+}
+
+#search-container {
+    position: relative;
+    z-index: auto;
+}
+
+#search-container #search-box {
+    height: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px 23px 2px 3px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    width: 173px;
+    outline: none;
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0px;
+}
+
+#search-container #search-button {
+    position: relative;
+    top: -3px;
+    margin-left: -20px;
+    width: 19px;
+    background: url(../images/search-images.png) no-repeat 0px 0px;
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0px;
+    font-size: inherit;
+    line-height: 19px;
+    height: 19px;
+    vertical-align: bottom;
+}
+
+#header {
+    background-color: #632f53;
+}
+
+.site-title,
+.site-title a {
+    color: #f7ba61;
+}
+
+@media screen and (min-width: 768px) {
+    .site-title a {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+#top-nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .site-title a {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        font-size: 30px;
+    }
+    .site-title {
+        margin: 0.2em;
+    }
+    #top-nav {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #top-nav .navbar-primary {
+        margin: 0 15px;
+    }
+}
+
+#top-nav a {
+    color: #fff;
+}
+
+#top-nav {
+    margin: 0.2em;
+}
+
+.navbar {
+    background: #a1c5ab;
+}
+
+.navbar-primary {
+    min-width: 21em;
+    text-align: center;
+}
+
+#primary-navigation .nav {
+    margin: 5px 0;
+}
+
+.nav>li>a:hover {
+    background: rgba(255, 255, 255, 0.2)
+}
+
+
+/*center the navbar */
+
+.nav-tabs>li.active>a {
+    background-color: white;
+}

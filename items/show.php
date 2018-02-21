@@ -1,5 +1,14 @@
 <?php 
     echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show'));
+
+
+// If there is a file that matches the slug of this page, display that as the template
+// Otherwise, use the template below on show.php
+$fname = dirname(__FILE__) . '/' . strtolower(metadata('item', 'item_type_name')) . '.php';
+if (is_file( $fname )):
+    include( $fname );
+else :
+
 ?>
     <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
     <div class="row">
@@ -102,4 +111,8 @@
     </div>
 
     </div>
-<?php echo foot(); ?>
+<?php 
+
+endif;
+
+echo foot(); ?>

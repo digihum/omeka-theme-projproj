@@ -1,131 +1,7 @@
-@import "bootstrap-custom";
-@import "bootstrap";
-@import "bootstrap-forms";
-@import "tags";
-
-// Add your custom CSS here
-
-.access-info {position: absolute; left: -9999em;}
-
-#masthead.transparent {
-    color: #383838;
-    background-color: #fff;
-}
-
-#masthead {
-    height: 50px;
-    background: #06456e;
-    color: white;
-    position: relative;
-    z-index: auto;
-    white-space: nowrap;
-    -webkit-transition: background-color 0.2s linear 0s;
-    -moz-transition: background-color 0.2s linear 0s;
-    -ms-transition: background-color 0.2s linear 0s;
-    -o-transition: background-color 0.2s linear 0s;
-    transition: background-color 0.2s linear 0s;
-}
-
-#masthead .icon-container {
-    display: none;
-}
-
-#warwick-logo-container, #utility-container {
-    line-height: 26px;
-}
-#warwick-logo-container {
-    margin-left: 8px;
-    height: 26px;
-    position: relative;
-    z-index: auto;
-    top: 12px;
-}
-
-#warwick-logo-link {
-    background-image: url(../images/logotype-colour.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    -webkit-background-size: 136px 26px;
-    background-size: 136px 26px;
-    display:block;
-    width: 136px;
-    height: 26px;
-}
-
-#warwick-logo-link, #warwick-site-links, #utility-bar, #search-container {
-    display: inline-block;
-    zoom: 1;
-    vertical-align: middle;
-}
-
-#warwick-site-links {
-    margin-left: 8px;
-    display: inline-block;
-    opacity: 0;
-        zoom: 1;
-    vertical-align: middle;
-}
-
-#warwick-site-links ul, #utility-bar ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#warwick-site-links ul li, #utility-bar ul li {
-    display: inline-block;
-    zoom: 1;
-    list-style: none;
-    list-style-type: inherit;
-}
-
-#utility-container {
+.access-info {
     position: absolute;
-    z-index: auto;
-    right: 0px;
-    margin-right: 8px;
-    height: 26px;
-    top: 12px;
+    left: -9999em;
 }
-
-#search-container {
-    position: relative;
-    z-index: auto;
-}
-
-#search-container #search-box {
-    height: 25px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 2px 23px 2px 3px;
-    line-height: 25px;
-    border: 1px solid #ccc;
-    width: 173px;
-        outline: none;
-    -webkit-appearance: none !important;
-    -webkit-border-radius: 0px;
-}
-
-#search-container #search-button {
-    position: relative;
-    top: -3px;
-    margin-left: -20px;
-    width: 19px;
-    background: url(../images/search-images.png) no-repeat 0px 0px;
-    -webkit-appearance: none !important;
-    -webkit-border-radius: 0px;
-        font-size: inherit;
-    line-height: 19px;
-    height: 19px;
-    vertical-align: bottom;
-}
-
-#header {
-    background-color: #632f53;
-}
-
-.site-title, .site-title a {color: #f7ba61;}
 
 img {
     max-width: 100%;
@@ -136,32 +12,26 @@ body {
 }
 
 .container {
-	background: #fff;
+    background: #fff;
 }
 
-.navbar{
-    background: #a1c5ab;	
-}
-
-#primary-navigation .nav { margin: 5px 0;} /*center the navbar */
-
-.nav-tabs > li.active > a {background-color: white;}
-
-#waypoints {
-
-}
 #neatline #waypoints {
     overflow-y: visible;
-	max-width: 400px;
+    max-width: 400px;
 }
 
-#comment-form-body {width:100%;}
-#flash ul, ul.error {
+#comment-form-body {
+    width: 100%;
+}
+
+#flash ul,
+ul.error {
     padding-left: 0;
 }
 
-#flash li, ul.error li {
-    width:100%;
+#flash li,
+ul.error li {
+    width: 100%;
     display: block;
     padding: 10px;
     margin-top: 5px;
@@ -170,6 +40,46 @@ body {
 #flash li.success {
     background-color: #dff0d8;
 }
+
 ul.error li {
     background-color: #f2dede;
 }
+
+.element-text {
+    margin-top: 10.5px;
+}
+
+main#content>.container {
+    padding-bottom: 1em;
+}
+
+
+/*
+@media (min-width: 768px) {
+    .id7-right-border {
+        background-image: url(https://www2.warwick.ac.uk/static_site/fac/arts/film/rhsborder-filmtv-4.jpg);
+        position: fixed;
+        top: 0;
+        z-index: 0;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+}
+
+@media (min-width: 768px) {
+    .id7-left-border {
+        background-image: url(https://www2.warwick.ac.uk/static_site/fac/arts/film/lhsborder-filmtv-4.jpg);
+        position: fixed;
+        top: 0;
+        z-index: 0;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+}
+*/

@@ -62,7 +62,7 @@
             </div>
 
             <div class="collapse navbar-collapse" id="primary-navigation">
-                <?php echo public_nav_main_bootstrap(); ?>
+                
 
             </div>
         </nav> 

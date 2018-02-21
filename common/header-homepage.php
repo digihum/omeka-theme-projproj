@@ -9,11 +9,12 @@
     <div class="main">
         <div class="sidebar">
         </div>
-        <div>
-            <h1>The Cinema Projectionist</h1>
+        <div class="title-area">
+            <h1>The Cinema<br>Projectionist</h1>
         </div>
     </div>
 </header>
+<div class="hero-image"></div>
 <main id="content" role="main">
   <div class="container">
       <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

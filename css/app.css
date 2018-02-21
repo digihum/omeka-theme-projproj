@@ -1,9 +1,10 @@
+body {
+  color: white;
+  background-color: #565759; }
+
 header.hero {
-  background: url("/themes/projproj/images/hero/hero-1.jpg");
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   display: table; }
   header.hero .topbar, header.hero .main {
     display: table-row; }
@@ -11,10 +12,30 @@ header.hero {
       display: table-cell; }
   header.hero .highlight {
     background-color: #ffff00;
-    width: 20em; }
+    width: 25em;
+    height: 6rem; }
   header.hero .sidebar {
-    width: 20em;
-    background-color: #565759; }
+    width: 25em;
+    background: linear-gradient(to bottom, transparent 0%, #565759 100%); }
+  header.hero .title-area h1 {
+    font-size: 16pt;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize; }
+
+.hero-image {
+  background: url("/themes/projproj/images/hero/hero-1.jpg");
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
 
 body {
   margin: 0; }
+
+* {
+  box-sizing: border-box; }

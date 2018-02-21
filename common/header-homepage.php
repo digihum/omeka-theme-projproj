@@ -15,6 +15,8 @@
     </div>
 </header>
 <div class="hero-image"></div>
+<section class="archive">
+</section>
 <main id="content" role="main">
   <div class="container">
       <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

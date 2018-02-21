@@ -78,7 +78,8 @@ a {
     opacity: 0; } }
 
 footer {
-  background-color: #252022; }
+  background-color: #252022;
+  min-height: 20em; }
 
 header.subpage-header {
   background-image: url(/themes/projproj/images/hero/hero-1.jpg);
@@ -124,6 +125,15 @@ header.hero {
   header.hero .sidebar {
     width: 25em;
     background: linear-gradient(to bottom, transparent 0%, rgba(86, 87, 89, 0.65) 100%); }
+    header.hero .sidebar ul {
+      list-style: none;
+      padding: 0; }
+      header.hero .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        display: block;
+        padding: 0.5em 1em; }
   header.hero .title-area {
     padding: 2rem;
     background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); }

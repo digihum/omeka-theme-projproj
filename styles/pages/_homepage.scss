@@ -27,6 +27,19 @@ header.hero {
       rgba(0, 0, 0, 0) 0%,
       $header-fade-stop-color 100%
     );
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.2em;
+          display: block;
+          padding: 0.5em 1em;
+        }
+      }
+    }
   }
 
   .title-area {

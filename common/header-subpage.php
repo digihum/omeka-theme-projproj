@@ -9,24 +9,11 @@
 
 </script>
 <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-<header role="banner" class="container">
+<header role="banner" class="subpage-header">
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <h1 class="site-title">THE CINEMA PROJECTIONIST</h1>
     <nav class="navbar navbar-default" role="navigation">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation">
-                <span class="sr-only">Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="primary-navigation">
-            
-
-        </div>
+        <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
     </nav> 
       
 </header>

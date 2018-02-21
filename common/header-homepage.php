@@ -10,7 +10,7 @@
         <div class="sidebar">
         </div>
         <div class="title-area">
-            <h1>The Cinema<br>Projectionist</h1>
+            <h1>THE CINEMA<br>PROJECTIONIST</h1>
         </div>
     </div>
 </header>

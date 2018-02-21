@@ -8,6 +8,9 @@
         <meta name="description" content="<?php echo $description; ?>" />
     <?php endif; ?>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
     <!-- Will build the page <title> -->
     <?php
         if (isset($title)) { $titleParts[] = strip_formatting($title); }

@@ -1,6 +1,7 @@
 body {
   color: white;
-  background-color: #565759; }
+  background-color: #565759;
+  font-family: 'Lato', sans-serif; }
 
 .hero-image {
   width: 100%;

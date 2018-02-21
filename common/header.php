@@ -24,7 +24,7 @@
     <?php
         ##queue_css_file('lib/bootstrap.min');
         // queue_css_file('bootstrap-custom');
-        queue_css_file('style');
+        // queue_css_file('style');
         queue_css_file('app');
         queue_css_file('header');
         queue_css_file('footer');

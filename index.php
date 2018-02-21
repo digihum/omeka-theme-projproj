@@ -31,6 +31,7 @@
         quae pro ium consedFaccabo. Itatur acitium aut
         autem ad untur, untium voluptat.</p>
         <a href='#'>Take one of our tours >></a>
+        <img src="/themes/projproj/images/reel.svg"/>
     </div>
     <div class="featured-images">
             <div class="top">

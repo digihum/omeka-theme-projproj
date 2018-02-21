@@ -5,13 +5,14 @@
             <div>Warwick</div>     
         </div> 
         <div>
-            <nav class="navbar navbar-default" role="navigation">
-                <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
-            </nav> 
+           
         </div>
     </div>
     <div class="main">
         <div class="sidebar">
+            <nav class="navbar navbar-default" role="navigation">
+                <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
+            </nav> 
         </div>
         <div class="title-area">
             <h1>THE CINEMA<br>PROJECTIONIST</h1>

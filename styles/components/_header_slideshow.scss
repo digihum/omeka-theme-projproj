@@ -10,22 +10,22 @@
   z-index: -1000;
 
   &.slide-1 {
-    background: url('/themes/projproj/images/hero/hero-1.jpg');
+    background-image: url('/themes/projproj/images/hero/hero-1.jpg');
     animation: fade 40s infinite;
   }
 
   &.slide-2 {
-    background: url('/themes/projproj/images/hero/hero-2.jpg');
+    background-image: url('/themes/projproj/images/hero/hero-2.jpg');
     animation: fade2 40s infinite;
   }
 
   &.slide-3 {
-    background: url('/themes/projproj/images/hero/hero-3.jpg');
+    background-image: url('/themes/projproj/images/hero/hero-3.jpg');
     animation: fade3 40s infinite;
   }
 
   &.slide-4 {
-    background: url('/themes/projproj/images/hero/hero-4.jpg');
+    background-image: url('/themes/projproj/images/hero/hero-4.jpg');
     animation: fade4 40s infinite;
   }
 }

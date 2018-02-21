@@ -15,13 +15,38 @@
             <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
         </div> 
     </div>
-    <div>
+    <div class="description">
         <h2>ARCHIVES</h2>
         <p>A multimedia library of resources documenting the working lives of cinema projectionists in Britain
-from the 1890s to 2010s. Browse first hand audio accounts of professional practices and experiences,
-videos, photographs, documents, specialist magazine articles, and more</p>
-    <a href='#'>Explore our archives >></a>
-</div>
+        from the 1890s to 2010s. Browse first hand audio accounts of professional practices and experiences,
+        videos, photographs, documents, specialist magazine articles, and more</p>
+        <a href='#'>Explore our archives >></a>
+    </div>
+</section>
+
+<section id="tours">
+    <div class="description">
+        <h2>TOURS</h2>
+        <p>Agnam, am dus vendi de natia voluptio ipsam
+        quae pro ium consedFaccabo. Itatur acitium aut
+        autem ad untur, untium voluptat.</p>
+        <a href='#'>Take one of our tours >></a>
+    </div>
+    <div class="featured-images">
+            <div class="top">
+            <div>
+                <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+            </div> 
+            <div>
+                <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+            </div> 
+        </div>
+        <div class="bottom">
+            <div>
+                <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+            </div> 
+        </div>
+    </div>
 </section>
 
 <h1>Hello!</h1>

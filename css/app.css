@@ -1,4 +1,17 @@
 header.hero {
   background: url("/themes/projproj/images/hero/hero-1.jpg");
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  header.hero .topbar, header.hero .main {
+    display: flex; }
+  header.hero .highlight {
+    background-color: #ffff00;
+    width: 20em; }
+  header.hero .sidebar {
+    width: 20em;
+    background-color: #565759; }
+
+body {
+  margin: 0; }

@@ -2,10 +2,18 @@
 
 <section id="archives">
     <div class="featured-images">
-        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
-        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
-        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
-        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        <div>
+            <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        </div>
+        <div>
+            <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        </div>
+        <div>
+            <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        </div>
+        <div>
+            <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        </div> 
     </div>
     <div>
         <h2>ARCHIVES</h2>

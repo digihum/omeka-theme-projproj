@@ -4,12 +4,13 @@
         <div class="highlight">
             <div>Warwick</div>     
         </div> 
+        <div></div>
     </div>
     <div class="main">
         <div class="sidebar">
         </div>
         <div>
-                <h1>The Cinema Projectionist</h1>
+            <h1>The Cinema Projectionist</h1>
         </div>
     </div>
 </header>

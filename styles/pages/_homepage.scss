@@ -4,9 +4,14 @@ header.hero {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  display: table;
 
   .topbar, .main {
-    display: flex;
+    display: table-row;
+
+    &>div {
+      display: table-cell;
+    }
   }
 
   .highlight {

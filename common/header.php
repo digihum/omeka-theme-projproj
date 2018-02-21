@@ -25,6 +25,7 @@
         ##queue_css_file('lib/bootstrap.min');
         // queue_css_file('bootstrap-custom');
         queue_css_file('style');
+        queue_css_file('app');
         queue_css_file('header');
         queue_css_file('footer');
         queue_css_file('frontpage-vpb');
@@ -49,7 +50,7 @@ echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass));
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ($path === '' || $path === '/') {
-    include_once('./header-homepage.php');
+    include_once('header-homepage.php');
 } else {
-    include_once('./header-subpage.php');
+    include_once('header-subpage.php');
 }

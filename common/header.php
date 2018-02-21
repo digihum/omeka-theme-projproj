@@ -29,10 +29,6 @@
         // queue_css_file('bootstrap-custom');
         // queue_css_file('style');
         queue_css_file('app');
-        queue_css_file('header');
-        queue_css_file('footer');
-        queue_css_file('frontpage-vpb');
-
         echo head_css();
     ?>
 

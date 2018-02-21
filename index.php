@@ -75,8 +75,8 @@
         <a href='#'>Explore the projection box >></a>
     </div>
     <img src="/themes/projproj/images/reel.svg" style="position: absolute;
-    left: -32em;
-    top: 4em;"/>
+    right: -32em;
+    top: 12em;"/>
     </div>
 </section>
 <!--

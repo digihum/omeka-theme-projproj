@@ -129,7 +129,8 @@ body#home section#archives .featured-images {
       width: 100%; }
 
 body#home section#tours {
-  display: flex; }
+  display: flex;
+  position: relative; }
   body#home section#tours .description {
     flex: 1;
     text-align: right; }
@@ -149,7 +150,8 @@ body#home section#tours {
         width: 100%; }
 
 body#home section#vpb {
-  display: flex; }
+  display: flex;
+  position: relative; }
   body#home section#vpb .description {
     flex: 1; }
   body#home section#vpb .featured-images div {

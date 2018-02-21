@@ -31,7 +31,9 @@
         quae pro ium consedFaccabo. Itatur acitium aut
         autem ad untur, untium voluptat.</p>
         <a href='#'>Take one of our tours >></a>
-        <img src="/themes/projproj/images/reel.svg"/>
+        <img src="/themes/projproj/images/reel.svg" style="position: absolute;
+    left: -32em;
+    top: 4em;"/>
     </div>
     <div class="featured-images">
             <div class="top">
@@ -71,6 +73,10 @@
         uncovered as you explore the interactive
         Virtual Projection Box.</p>
         <a href='#'>Explore the projection box >></a>
+    </div>
+    <img src="/themes/projproj/images/reel.svg" style="position: absolute;
+    left: -32em;
+    top: 4em;"/>
     </div>
 </section>
 <!--

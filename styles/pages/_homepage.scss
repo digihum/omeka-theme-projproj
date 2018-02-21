@@ -78,6 +78,7 @@ body#home {
 
   section#tours {
     display: flex;
+    position: relative;
     .description {
       flex: 1;
       text-align: right;
@@ -107,6 +108,7 @@ body#home {
 
   section#vpb {
     display: flex;
+    position: relative;
     .description {
       flex: 1;
     }

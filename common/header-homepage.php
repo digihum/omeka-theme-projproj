@@ -14,7 +14,10 @@
         </div>
     </div>
 </header>
-<div class="hero-image"></div>
+<div class="hero-image slide-1"></div>
+<div class="hero-image slide-2"></div>
+<div class="hero-image slide-3"></div>
+<div class="hero-image slide-4"></div>
 <section class="archive">
 </section>
 <main id="content" role="main">

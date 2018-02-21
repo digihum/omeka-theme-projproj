@@ -98,8 +98,9 @@ header.hero {
       text-transform: capitalize; }
 
 body#home main#content {
-  display: relative; }
-  body#home main#content #hero-image-fadeout {
+  display: relative;
+  padding: 1em 0; }
+  body#home main#content .hero-image-fadeout {
     width: 100%;
     height: 30vh;
     background: linear-gradient(to bottom, rgba(86, 87, 89, 0.65) 0%, #565759 100%);

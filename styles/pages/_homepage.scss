@@ -38,7 +38,7 @@ header.hero {
 
 body#home {
   main#content {
-    display: relative;
+    position: relative;
     padding: 1em 0;
 
     .hero-image-fadeout {
@@ -47,6 +47,7 @@ body#home {
       background: linear-gradient(to bottom, $header-fade-stop-color 0%, $color-background 100%);
       position: absolute;
       top: 0;
+      z-index: -999;
     }
 
     div.container {

@@ -9,7 +9,7 @@
     <?php endif; ?>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-
+    <link rel="icon" href="/themes/projproj/favicon.ico">
 
     <!-- Will build the page <title> -->
     <?php

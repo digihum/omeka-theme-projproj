@@ -84,7 +84,9 @@ header.subpage-header {
   background-image: url(/themes/projproj/images/hero/hero-1.jpg);
   padding: 0.5em;
   border-left: 1em solid #ffff00;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  align-items: center; }
   header.subpage-header h1 {
     margin: 0;
     display: inline-block; }
@@ -100,13 +102,20 @@ header.subpage-header {
         header.subpage-header nav ul.navigation li a {
           color: white; }
 
+main#content div.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%; }
+
 header.hero {
   width: 100%;
   height: 100vh;
   display: table; }
-  header.hero .topbar, header.hero .main {
+  header.hero .topbar,
+  header.hero .main {
     display: table-row; }
-    header.hero .topbar > div, header.hero .main > div {
+    header.hero .topbar > div,
+    header.hero .main > div {
       display: table-cell; }
   header.hero .highlight {
     background-color: #ffff00;
@@ -138,10 +147,6 @@ body#home main#content {
     position: absolute;
     top: 0;
     z-index: -999; }
-  body#home main#content div.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 100%; }
 
 body#home section#archives .featured-images {
   display: flex; }

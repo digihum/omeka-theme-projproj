@@ -5,10 +5,11 @@ header.hero {
   height: 100vh;
   display: table;
 
-  .topbar, .main {
+  .topbar,
+  .main {
     display: table-row;
 
-    &>div {
+    & > div {
       display: table-cell;
     }
   }
@@ -21,12 +22,21 @@ header.hero {
 
   .sidebar {
     width: 25em;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $header-fade-stop-color 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      $header-fade-stop-color 100%
+    );
   }
 
   .title-area {
     padding: 2rem;
-    background: linear-gradient(to bottom, transparent 0%, transparent 80%, $header-fade-stop-color 100%);
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 80%,
+      $header-fade-stop-color 100%
+    );
     h1 {
       font-size: 4rem;
       color: white;
@@ -37,7 +47,6 @@ header.hero {
 }
 
 body#home {
-
   h2 {
     font-size: 3em;
     margin: 1rem 0;
@@ -50,27 +59,25 @@ body#home {
     .hero-image-fadeout {
       width: 100%;
       height: 30vh;
-      background: linear-gradient(to bottom, $header-fade-stop-color 0%, $color-background 100%);
+      background: linear-gradient(
+        to bottom,
+        $header-fade-stop-color 0%,
+        $color-background 100%
+      );
       position: absolute;
       top: 0;
       z-index: -999;
-    }
-
-    div.container {
-      max-width: 1000px;
-      margin: 0 auto;
-      width: 100%;
     }
   }
 
   section#archives {
     .featured-images {
       display: flex;
-      &>div {
+      & > div {
         flex: 1;
         padding: 0.5em;
         img {
-          width: 100%
+          width: 100%;
         }
       }
     }
@@ -87,11 +94,11 @@ body#home {
       flex: 1;
       .top {
         display: flex;
-        &>div {
+        & > div {
           flex: 1;
           padding: 0.5em;
           img {
-            width: 100%
+            width: 100%;
           }
         }
       }
@@ -99,10 +106,9 @@ body#home {
         flex: 1;
         padding: 0.5em;
         img {
-          width: 100%
+          width: 100%;
         }
       }
-      
     }
   }
 
@@ -113,11 +119,11 @@ body#home {
       flex: 1;
     }
     .featured-images div {
-        flex: 1;
-        padding: 0.5em;
-        img {
-          width: 100%
-        }    
+      flex: 1;
+      padding: 0.5em;
+      img {
+        width: 100%;
+      }
     }
   }
 }

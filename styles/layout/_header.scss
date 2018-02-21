@@ -3,6 +3,8 @@ header.subpage-header {
   padding: 0.5em;
   border-left: 1em solid $color-highlight;
   background-size: cover;
+  display: flex;
+  align-items: center;
 
   h1 {
     margin: 0;

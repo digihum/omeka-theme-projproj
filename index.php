@@ -1,6 +1,21 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<?php queue_css_file('frontpage-vpb'); ?>
+<section>
+    <div class="featured-images">
+        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+        <img src="https://projectionproject.warwick.ac.uk/files/original/cc7382177759b6b1495dba8865665b0e.jpg" />
+    </div>
+    <div>
+        <h2>ARCHIVES</h2>
+        <p>A multimedia library of resources documenting the working lives of cinema projectionists in Britain
+from the 1890s to 2010s. Browse first hand audio accounts of professional practices and experiences,
+videos, photographs, documents, specialist magazine articles, and more</p>
+    <a href='#'>Explore our archives >></a>
+</div>
+</section>
+
 <h1>Hello!</h1>
 <?php echo get_theme_option('Homepage About'); ?>
 <div class="row">

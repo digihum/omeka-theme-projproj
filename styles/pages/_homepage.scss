@@ -37,6 +37,12 @@ header.hero {
 }
 
 body#home {
+
+  h2 {
+    font-size: 3em;
+    margin: 1rem 0;
+  }
+  
   main#content {
     position: relative;
     padding: 1em 0;
@@ -54,6 +60,19 @@ body#home {
       max-width: 1000px;
       margin: 0 auto;
       width: 100%;
+    }
+  }
+
+  section#archives {
+    .featured-images {
+      display: flex;
+      &>div {
+        flex: 1;
+        padding: 0.5em;
+        img {
+          width: 100%
+        }
+      }
     }
   }
 }

@@ -90,6 +90,15 @@ header.subpage-header {
     display: inline-block; }
   header.subpage-header nav {
     display: inline-block; }
+    header.subpage-header nav ul.navigation {
+      list-style: none;
+      padding: 0;
+      margin-left: 1em; }
+      header.subpage-header nav ul.navigation li {
+        display: inline-block;
+        margin-right: 1.5em; }
+        header.subpage-header nav ul.navigation li a {
+          color: white; }
 
 header.hero {
   width: 100%;

@@ -42,7 +42,7 @@ body#home {
     font-size: 3em;
     margin: 1rem 0;
   }
-  
+
   main#content {
     position: relative;
     padding: 1em 0;
@@ -73,6 +73,36 @@ body#home {
           width: 100%
         }
       }
+    }
+  }
+
+  section#tours {
+    display: flex;
+    .description {
+      flex: 1;
+      text-align: right;
+    }
+    .featured-images {
+      display: flex;
+      flex: 1;
+      .top {
+        display: flex;
+        &>div {
+          flex: 1;
+          padding: 0.5em;
+          img {
+            width: 100%
+          }
+        }
+      }
+      .bottom div {
+        flex: 1;
+        padding: 0.5em;
+        img {
+          width: 100%
+        }
+      }
+      
     }
   }
 }

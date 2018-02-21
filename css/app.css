@@ -128,6 +128,27 @@ body#home section#archives .featured-images {
     body#home section#archives .featured-images > div img {
       width: 100%; }
 
+body#home section#tours {
+  display: flex; }
+  body#home section#tours .description {
+    flex: 1;
+    text-align: right; }
+  body#home section#tours .featured-images {
+    display: flex;
+    flex: 1; }
+    body#home section#tours .featured-images .top {
+      display: flex; }
+      body#home section#tours .featured-images .top > div {
+        flex: 1;
+        padding: 0.5em; }
+        body#home section#tours .featured-images .top > div img {
+          width: 100%; }
+    body#home section#tours .featured-images .bottom div {
+      flex: 1;
+      padding: 0.5em; }
+      body#home section#tours .featured-images .bottom div img {
+        width: 100%; }
+
 body {
   margin: 0; }
 

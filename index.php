@@ -1,9 +1,9 @@
 <?php echo head(array('bodyid'=>'home')); ?>
-<?php echo random_featured_items(4); ?>
+
 <section id="archives">
     <div class="featured-images">
-        
-        <div>
+    <?php echo random_featured_items(4); ?>
+        <!-- <div>
             <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
         </div>
         <div>
@@ -14,7 +14,7 @@
         </div>
         <div>
             <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
-        </div> 
+        </div>  -->
     </div>
     <div class="description">
         <h2>ARCHIVES</h2>

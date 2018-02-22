@@ -150,6 +150,10 @@ body#home h2 {
 body#home svg {
   z-index: -800; }
 
+body#home .item.record h3,
+body#home .item.record p.item-description {
+  display: none; }
+
 body#home main#content {
   position: relative;
   padding: 1em 0; }

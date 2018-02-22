@@ -63,6 +63,13 @@ body#home {
     z-index: -800;
   }
 
+  .item.record {
+    h3,
+    p.item-description {
+      display: none;
+    }
+  }
+
   main#content {
     position: relative;
     padding: 1em 0;

@@ -20,7 +20,7 @@
         <p>A multimedia library of resources documenting the working lives of cinema projectionists in Britain
         from the 1890s to 2010s. Browse first hand audio accounts of professional practices and experiences,
         videos, photographs, documents, specialist magazine articles, and more</p>
-        <a href='#'>Explore our archives >></a>
+        <a href='/items/'>Explore our archives >></a>
     </div>
 </section>
 
@@ -30,7 +30,7 @@
         <p>Agnam, am dus vendi de natia voluptio ipsam
         quae pro ium consedFaccabo. Itatur acitium aut
         autem ad untur, untium voluptat.</p>
-        <a href='#'>Take one of our tours >></a>
+        <a href='/exhibits/'>Take one of our tours >></a>
         <img src="/themes/projproj/images/reel.svg" style="position: absolute;
     left: -32em;
     top: 4em;"/>
@@ -72,7 +72,7 @@
         commentary from the research team to be
         uncovered as you explore the interactive
         Virtual Projection Box.</p>
-        <a href='#'>Explore the projection box >></a>
+        <a href='/neatline/fullscreen/projection-box#records/114'>Explore the projection box >></a>
     </div>
     <img src="/themes/projproj/images/reel.svg" style="position: absolute;
     right: -32em;

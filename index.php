@@ -25,6 +25,29 @@
     </div>
 </section>
 
+<?php
+function get_random_featured_exhibits($num = 5, $hasImage = null)
+{
+    return get_records('Exhibit', array('featured' => 1,
+                                     'sort_field' => 'random',
+                                     'hasImage' => $hasImage), $num);
+}
+
+
+
+?>
+
+<?php 
+    $exhibits = get_random_featured_exhibits(3);
+    if(count($exhibits) == 1) {
+        $exhibits[1] = $exhibits[0];
+    }
+
+    if(count($exhibits) == 2) {
+        $exhibits[2] = $exhibits[1];
+    }
+?>
+
 <section id="tours">
     <div class="description">
         <h2>TOURS</h2>
@@ -39,15 +62,21 @@
     <div class="featured-images">
             <div class="top">
             <div>
-                <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
+                <?php echo exhibit_builder_link_to_exhibit($exhibits[0], 
+                    record_image($exhibits[0], 'square_thumbnail'),
+                    array('class' => 'image')); ?>
             </div> 
             <div>
-                <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
+                <?php echo exhibit_builder_link_to_exhibit($exhibits[1], 
+                    record_image($exhibits[1], 'square_thumbnail'),
+                    array('class' => 'image')); ?>
             </div> 
         </div>
         <div class="bottom">
             <div>
-                <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
+                <?php echo exhibit_builder_link_to_exhibit($exhibits[2], 
+                    record_image($exhibits[2], 'fullsize'),
+                    array('class' => 'image')); ?>
             </div> 
         </div>
     </div>
@@ -64,7 +93,7 @@
 <section id="vpb">
     <div class="featured-images">
         <div>
-            <img src="https://projectionproject.warwick.ac.uk/files/square_thumbnails/cc7382177759b6b1495dba8865665b0e.jpg" />
+            <img src="https://projectionproject.warwick.ac.uk/themes/projproj/images/vpb_frontpage_sm.png" />
         </div>      
     </div>
     <div class="description">

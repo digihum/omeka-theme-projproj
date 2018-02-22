@@ -5,19 +5,9 @@ echo head(array(
 ?>
 
 <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>
-<div class="row">
-    <div class="col-sm-8 col-md-9">
-        <div id="exhibit-blocks">
-        <?php exhibit_builder_render_exhibit_page(); ?>
-        </div>
-    </div>
 
-    <div class="col-sm-4 col-md-3 sidebar">
-        <nav id="exhibit-pages">
-            <h4><strong><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></strong></h4>
-            <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-        </nav>
-    </div>
+<div id="exhibit-blocks">
+    <?php exhibit_builder_render_exhibit_page(); ?>
 </div>
 
 <div id="exhibit-page-navigation">
@@ -35,5 +25,10 @@ echo head(array(
     <?php echo exhibit_builder_page_trail(); ?>
     </div>
 </div>
+
+<nav id="exhibit-pages">
+    <h4><strong><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></strong></h4>
+    <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+</nav>
 
 <?php echo foot(); ?>

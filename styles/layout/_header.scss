@@ -10,20 +10,4 @@ header.subpage-header {
     margin: 0;
     display: inline-block;
   }
-
-  nav {
-    display: inline-block;
-    ul.navigation {
-      list-style: none;
-      padding: 0;
-      margin-left: 1em;
-      li {
-        display: inline-block;
-        margin-right: 1.5em;
-        a {
-          color: white;
-        }
-      }
-    }
-  }
 }

@@ -1,0 +1,24 @@
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+    }
+  }
+}
+
+nav.horizontal {
+  display: inline-block;
+  ul.navigation {
+    margin-left: 1em;
+    li {
+      display: inline-block;
+      margin-right: 1.5em;
+    }
+  }
+}

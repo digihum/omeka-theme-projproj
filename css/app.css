@@ -245,7 +245,11 @@ div#exhibit-blocks::after {
   text-align: center;
   justify-content: center;
   display: flex;
-  padding: 2em 0; }
+  padding: 2em 0;
+  flex-direction: column; }
+
+.layout-file-text .exhibit-items {
+  max-width: initial; }
 
 body.exhibits nav#exhibit-pages {
   padding: 1em;

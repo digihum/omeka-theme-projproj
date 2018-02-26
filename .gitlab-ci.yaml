@@ -1,0 +1,4 @@
+syntax-check:
+    script: 
+      # check all php files are syntatically correct
+      - find . -type f -name '*.php' -exec php -l {} \;

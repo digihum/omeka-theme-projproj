@@ -59,7 +59,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     <div class="reel-container" style="position: absolute;
         left: 0;
         right: 0;
-        height: 20em;">
+        height: 30em;">
             <img src="/themes/projproj/images/reel.svg" />
     </div>
     <div class="featured-images">
@@ -110,8 +110,12 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     <div class="reel-container" style="position: absolute;
         left: 0;
         right: 0;
-        height: 20em;">
-        <img src="/themes/projproj/images/reel.svg"/>
+        height: 30em;
+        text-align:right;">
+        <img src="/themes/projproj/images/reel.svg" style="
+    height: 100%;
+    
+"/>
     </div>
 </section>
 <!--

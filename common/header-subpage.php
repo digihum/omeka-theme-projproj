@@ -11,7 +11,7 @@
 <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 <header role="banner" class="subpage-header">
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-    <h1 class="site-title">THE CINEMA PROJECTIONIST</h1>
+    <h1 class="site-title"><a href="/">THE CINEMA PROJECTIONIST</a></h1>
     <nav class="navbar navbar-default horizontal" role="navigation">
         <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
     </nav> 

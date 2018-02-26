@@ -55,9 +55,12 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         quae pro ium consedFaccabo. Itatur acitium aut
         autem ad untur, untium voluptat.</p>
         <a href='/exhibits/'>Take one of our tours >></a>
-        <img src="/themes/projproj/images/reel.svg" style="position: absolute;
-    left: -32em;
-    top: 4em;"/>
+    </div>
+    <div class="reel-container" style="position: absolute;
+        left: 0;
+        right: 0;
+        height: 20em;">
+            <img src="/themes/projproj/images/reel.svg" />
     </div>
     <div class="featured-images">
             <div class="top">
@@ -104,9 +107,11 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         Virtual Projection Box.</p>
         <a href='/neatline/fullscreen/projection-box#records/114'>Explore the projection box >></a>
     </div>
-    <img src="/themes/projproj/images/reel.svg" style="position: absolute;
-    right: -32em;
-    top: 12em;"/>
+    <div class="reel-container" style="position: absolute;
+        left: 0;
+        right: 0;
+        height: 20em;">
+        <img src="/themes/projproj/images/reel.svg"/>
     </div>
 </section>
 <!--

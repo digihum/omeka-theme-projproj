@@ -131,11 +131,15 @@ header.hero {
           display: table-cell; } }
   header.hero .highlight {
     background-color: #ffff00;
-    width: 25em;
     height: 6rem; }
+    @media screen and (min-width: 980px) {
+      header.hero .highlight {
+        width: 25em; } }
   header.hero .sidebar {
-    width: 25em;
     background: linear-gradient(to bottom, transparent 0%, rgba(86, 87, 89, 0.65) 100%); }
+    @media screen and (min-width: 980px) {
+      header.hero .sidebar {
+        width: 25em; } }
     header.hero .sidebar nav li {
       font-size: 1.2em;
       padding: 0.5em 1em; }

@@ -60,7 +60,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         left: 0;
         right: 0;
         height: 30em;">
-            <img src="/themes/projproj/images/reel.svg" />
+            <img src="/themes/projproj/images/reel.svg" style="height: 100%;     transform: translate(-10em, 10em);" />
     </div>
     <div class="featured-images">
             <div class="top">
@@ -114,7 +114,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         text-align:right;">
         <img src="/themes/projproj/images/reel.svg" style="
     height: 100%;
-    
+    transform: translate(20em, 10em);
 "/>
     </div>
 </section>

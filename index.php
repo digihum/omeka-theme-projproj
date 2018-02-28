@@ -48,7 +48,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     }
 ?>
 
-<div class="reel-container" style="background-position: 8em 5em;"></div>
+<div class="reel-container" style="background-position: -20vw 8em;"></div>
 <section id="tours">
     <div class="description">
         <h2>TOURS</h2>
@@ -89,7 +89,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     </p>
 </section>
 
-<div class="reel-container"></div>
+<div class="reel-container" style="background-position: 70vw 12em;"></div>
 <section id="vpb">
     <div class="featured-images">
         <div>

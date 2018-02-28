@@ -71,7 +71,7 @@ header.hero {
       );
     }
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       @media screen and (max-width: $break_medium) {
         font-size: 10vw;
       }
@@ -193,9 +193,12 @@ body#home {
   position: absolute;
   left: 0;
   right: 0;
-  height: 40em;
+  height: 60vw;
   z-index: -1000;
   background-image: url(/themes/projproj/images/reel.svg);
   background-repeat: no-repeat;
-  background-size: 30em;
+  background-size: 40vw;
+  @media screen and (max-width: $break_medium) {
+    background-image: none;
+  }
 }

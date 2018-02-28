@@ -156,7 +156,7 @@ header.hero {
       header.hero .title-area {
         background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
     header.hero .title-area h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       color: white;
       font-family: sans-serif;
       text-transform: capitalize; }
@@ -239,11 +239,14 @@ body#home section#vpb {
   position: absolute;
   left: 0;
   right: 0;
-  height: 40em;
+  height: 60vw;
   z-index: -1000;
   background-image: url(/themes/projproj/images/reel.svg);
   background-repeat: no-repeat;
-  background-size: 30em; }
+  background-size: 40vw; }
+  @media screen and (max-width: 980px) {
+    .reel-container {
+      background-image: none; } }
 
 div#exhibit-blocks::after {
   content: "";

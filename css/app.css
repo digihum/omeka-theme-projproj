@@ -1,8 +1,7 @@
 body {
   color: white;
   background-color: #565759;
-  font-family: "Lato", sans-serif;
-  overflow-x: hidden; }
+  font-family: "Lato", sans-serif; }
 
 a {
   color: yellow;
@@ -239,8 +238,6 @@ body#home section#vpb {
   right: 0;
   height: 30em;
   z-index: -1000; }
-  .reel-container > img {
-    user-select: none; }
 
 div#exhibit-blocks::after {
   content: "";

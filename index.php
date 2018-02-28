@@ -48,6 +48,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     }
 ?>
 
+<div class="reel-container"></div>
 <section id="tours">
     <div class="description">
         <h2>TOURS</h2>
@@ -56,9 +57,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         autem ad untur, untium voluptat.</p>
         <a href='/exhibits/'>Take one of our tours >></a>
     </div>
-    <div class="reel-container">
-            <img src="/themes/projproj/images/reel.svg" style="height: 100%;     transform: translate(-10em, 10em);" />
-    </div>
+
     <div class="featured-images">
             <div class="top">
             <div>
@@ -90,6 +89,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     </p>
 </section>
 
+<div class="reel-container"></div>
 <section id="vpb">
     <div class="featured-images">
         <div>
@@ -103,13 +103,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         uncovered as you explore the interactive
         Virtual Projection Box.</p>
         <a href='/neatline/fullscreen/projection-box#records/114'>Explore the projection box >></a>
-    </div>
-    <div class="reel-container">
-        <img src="/themes/projproj/images/reel.svg" style="
-    height: 100%;
-    transform: translate(20em, 10em);
-"/>
-    </div>
+    </div> 
 </section>
 <!--
 <h1>Hello!</h1>

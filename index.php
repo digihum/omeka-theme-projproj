@@ -56,10 +56,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         autem ad untur, untium voluptat.</p>
         <a href='/exhibits/'>Take one of our tours >></a>
     </div>
-    <div class="reel-container" style="position: absolute;
-        left: 0;
-        right: 0;
-        height: 30em;">
+    <div class="reel-container">
             <img src="/themes/projproj/images/reel.svg" style="height: 100%;     transform: translate(-10em, 10em);" />
     </div>
     <div class="featured-images">
@@ -107,11 +104,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         Virtual Projection Box.</p>
         <a href='/neatline/fullscreen/projection-box#records/114'>Explore the projection box >></a>
     </div>
-    <div class="reel-container" style="position: absolute;
-        left: 0;
-        right: 0;
-        height: 30em;
-        text-align:right;">
+    <div class="reel-container">
         <img src="/themes/projproj/images/reel.svg" style="
     height: 100%;
     transform: translate(20em, 10em);

@@ -223,6 +223,15 @@ body#home section#vpb {
       body#home section#vpb .featured-images div img {
         width: 100%; }
 
+.reel-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30em;
+  z-index: -1000; }
+  .reel-container > img {
+    user-select: none; }
+
 div#exhibit-blocks::after {
   content: "";
   display: block;

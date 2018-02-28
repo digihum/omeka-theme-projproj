@@ -166,3 +166,14 @@ body#home {
     }
   }
 }
+
+.reel-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30em;
+  z-index: -1000;
+  & > img {
+    user-select: none;
+  }
+}

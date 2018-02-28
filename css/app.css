@@ -160,6 +160,9 @@ header.hero {
       color: white;
       font-family: sans-serif;
       text-transform: capitalize; }
+      @media screen and (max-width: 980px) {
+        header.hero .title-area h1 {
+          font-size: 10vw; } }
 
 body#home h2 {
   font-size: 3em;

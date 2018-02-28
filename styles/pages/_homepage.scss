@@ -72,6 +72,9 @@ header.hero {
     }
     h1 {
       font-size: 4rem;
+      @media screen and (max-width: $break_medium) {
+        font-size: 10vw;
+      }
       color: white;
       font-family: sans-serif;
       text-transform: capitalize;

@@ -70,6 +70,9 @@ header.hero {
         $header-fade-stop-color 100%
       );
     }
+    @media screen and (min-width: $break_huge) {
+      padding-left: 8vw;
+    }
     h1 {
       font-size: 5rem;
       @media screen and (max-width: $break_medium) {

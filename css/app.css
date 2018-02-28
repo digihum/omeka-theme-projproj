@@ -161,6 +161,9 @@ header.hero {
     @media screen and (min-width: 980px) {
       header.hero .title-area {
         background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
+    @media screen and (min-width: 1400px) {
+      header.hero .title-area {
+        padding-left: 8vw; } }
     header.hero .title-area h1 {
       font-size: 5rem;
       color: white;

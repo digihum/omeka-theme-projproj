@@ -237,7 +237,10 @@ body#home section#vpb {
   left: 0;
   right: 0;
   height: 30em;
-  z-index: -1000; }
+  z-index: -1000;
+  background-image: url(/themes/projproj/images/reel.svg);
+  background-repeat: no-repeat;
+  background-size: 30em; }
 
 div#exhibit-blocks::after {
   content: "";

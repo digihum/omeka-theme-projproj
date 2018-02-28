@@ -9,6 +9,15 @@ header.hero {
     flex-direction: column-reverse;
   }
 
+  @media screen and (max-width: $break_medium) {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 80%,
+      $header-fade-stop-color 100%
+    );
+  }
+
   @media screen and (min-width: $break_medium) {
     display: table;
 
@@ -33,12 +42,12 @@ header.hero {
   .sidebar {
     @media screen and (min-width: $break_medium) {
       width: 25em;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        $header-fade-stop-color 100%
+      );
     }
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      $header-fade-stop-color 100%
-    );
 
     nav {
       li {
@@ -50,12 +59,14 @@ header.hero {
 
   .title-area {
     padding: 2rem;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 80%,
-      $header-fade-stop-color 100%
-    );
+    @media screen and (min-width: $break_medium) {
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 80%,
+        $header-fade-stop-color 100%
+      );
+    }
     h1 {
       font-size: 4rem;
       color: white;

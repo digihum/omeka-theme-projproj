@@ -123,6 +123,9 @@ header.hero {
   header.hero .main {
     display: flex;
     flex-direction: column-reverse; }
+  @media screen and (max-width: 980px) {
+    header.hero {
+      background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
   @media screen and (min-width: 980px) {
     header.hero {
       display: table; }
@@ -138,17 +141,18 @@ header.hero {
     @media screen and (min-width: 980px) {
       header.hero .highlight {
         width: 25em; } }
-  header.hero .sidebar {
-    background: linear-gradient(to bottom, transparent 0%, rgba(86, 87, 89, 0.65) 100%); }
-    @media screen and (min-width: 980px) {
-      header.hero .sidebar {
-        width: 25em; } }
-    header.hero .sidebar nav li {
-      font-size: 1.2em;
-      padding: 0.5em 1em; }
+  @media screen and (min-width: 980px) {
+    header.hero .sidebar {
+      width: 25em;
+      background: linear-gradient(to bottom, transparent 0%, rgba(86, 87, 89, 0.65) 100%); } }
+  header.hero .sidebar nav li {
+    font-size: 1.2em;
+    padding: 0.5em 1em; }
   header.hero .title-area {
-    padding: 2rem;
-    background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); }
+    padding: 2rem; }
+    @media screen and (min-width: 980px) {
+      header.hero .title-area {
+        background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
     header.hero .title-area h1 {
       font-size: 4rem;
       color: white;

@@ -36,6 +36,9 @@ header.hero {
     @media screen and (min-width: $break_medium) {
       width: 25em;
     }
+    @media screen and (max-width: $break_medium) {
+      height: 4em;
+    }
     height: 6rem;
   }
 

@@ -137,9 +137,15 @@ body#home {
   section#tours {
     display: flex;
     position: relative;
+    @media screen and (max-width: $break_medium) {
+      flex-direction: column-reverse;
+    }
     .description {
       flex: 1;
       text-align: right;
+      @media screen and (max-width: $break_medium) {
+        text-align: left;
+      }
     }
     .featured-images {
       flex: 1;
@@ -173,6 +179,9 @@ body#home {
   section#vpb {
     display: flex;
     position: relative;
+    @media screen and (max-width: $break_medium) {
+      flex-direction: column;
+    }
     .description {
       flex: 1;
     }

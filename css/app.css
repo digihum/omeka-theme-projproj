@@ -152,7 +152,7 @@ header.hero {
   @media screen and (min-width: 980px) {
     header.hero .sidebar {
       width: 25em;
-      background: linear-gradient(to bottom, transparent 0%, rgba(86, 87, 89, 0.65) 100%); } }
+      background: linear-gradient(to bottom, rgba(86, 87, 89, 0.2) 0%, rgba(86, 87, 89, 0.65) 100%); } }
   header.hero .sidebar nav li {
     font-size: 1.2em;
     padding: 0.5em 1em; }
@@ -160,7 +160,11 @@ header.hero {
     padding: 1rem 2rem; }
     @media screen and (min-width: 980px) {
       header.hero .title-area {
-        background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
+        background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%);
+        display: flex;
+        flex-direction: column-reverse; }
+        header.hero .title-area .subtitle {
+          font-size: 6vw; } }
     @media screen and (min-width: 1400px) {
       header.hero .title-area {
         padding-left: 8vw; } }
@@ -173,22 +177,23 @@ header.hero {
           font-size: 10vw; } }
       header.hero .title-area h1 > span {
         position: relative; }
-        header.hero .title-area h1 > span .shadow {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.67);
-          z-index: -500;
-          filter: blur(30px); }
     header.hero .title-area .subtitle {
       font-family: "Josefin Sans";
       max-width: 13em;
       font-size: 2em;
       font-weight: bolder;
       color: yellow;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
+  header.hero .shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.67);
+    z-index: -500;
+    filter: blur(30px); }
 
 body#home h2 {
   font-size: 3em;

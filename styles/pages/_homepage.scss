@@ -61,7 +61,7 @@ header.hero {
   }
 
   .title-area {
-    padding: 2rem;
+    padding: 1rem 2rem;
     @media screen and (min-width: $break_medium) {
       background: linear-gradient(
         to bottom,
@@ -93,6 +93,14 @@ header.hero {
           filter: blur(30px);
         }
       }
+    }
+    .subtitle {
+      font-family: "Josefin Sans";
+      max-width: 13em;
+      font-size: 2em;
+      font-weight: bolder;
+      color: yellow;
+      margin: 0;
     }
   }
 }

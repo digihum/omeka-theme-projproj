@@ -15,6 +15,7 @@
             </nav> 
         </div>
         <div class="title-area">
+            <p class="subtitle">EXPLORE THE HISTORY OF CINEMA PROJECTION IN BRITAIN</p>
             <h1>
                 <span>
                     <span>THE CINEMA</span><span class="shadow"></span>

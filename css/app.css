@@ -148,7 +148,7 @@ header.hero {
         width: 25em; } }
     @media screen and (max-width: 980px) {
       header.hero .highlight {
-        height: 4em; } }
+        height: 1rem; } }
   @media screen and (min-width: 980px) {
     header.hero .sidebar {
       width: 25em;

@@ -2,7 +2,7 @@
 <header class="hero">
     <div class="topbar">
         <div class="highlight">
-            <div>Warwick</div>     
+   
         </div> 
         <div>
            

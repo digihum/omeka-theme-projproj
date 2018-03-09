@@ -15,7 +15,13 @@
             </nav> 
         </div>
         <div class="title-area">
-            <div><h1>THE CINEMA<br>PROJECTIONIST</h1></div>
+            <h1>
+                <span>
+                    <span>THE CINEMA</span><span class="shadow"></span>
+                </span><br>
+                <span>
+                    <span>PROJECTIONIST</span><span class="shadow"></span>
+                </span></h1>
         </div>
     </div>
 </header>

@@ -15,7 +15,7 @@
             </nav> 
         </div>
         <div class="title-area">
-            <h1>THE CINEMA<br>PROJECTIONIST</h1>
+            <div><h1>THE CINEMA<br>PROJECTIONIST</h1></div>
         </div>
     </div>
 </header>

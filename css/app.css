@@ -171,6 +171,17 @@ header.hero {
       @media screen and (max-width: 980px) {
         header.hero .title-area h1 {
           font-size: 10vw; } }
+      header.hero .title-area h1 > span {
+        position: relative; }
+        header.hero .title-area h1 > span .shadow {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.67);
+          z-index: -500;
+          filter: blur(30px); }
 
 body#home h2 {
   font-size: 3em;

@@ -1,0 +1,11 @@
+body#items.browse {
+  div.item.hentry {
+    .row {
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      grid-row-gap: 5em;
+      grid-column-gap: 2em;
+      padding-top: 1em;
+    }
+  }
+}

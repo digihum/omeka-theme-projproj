@@ -121,8 +121,10 @@ label[for="burger-check"] {
   padding: 1em;
   right: 0;
   margin: 1.5em 0; }
-  .navigation li {
-    display: block; }
+
+nav.horizontal ul.navigation li {
+  display: block;
+  margin: 0; }
 
 footer {
   background-color: #252022;

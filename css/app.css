@@ -108,6 +108,9 @@ label[for="burger-check"] {
 label[for="burger-check"] {
   cursor: pointer; }
 
+.navigation {
+  display: none; }
+
 .burger-check:checked ~ .navigation {
   display: block; }
 

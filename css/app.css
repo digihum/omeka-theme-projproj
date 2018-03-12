@@ -396,12 +396,14 @@ body.neatline.show main#content .container {
 .exhibit-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 5em;
+  grid-row-gap: 2em;
   grid-column-gap: 2em;
-  padding-top: 1em; }
+  padding: 1.5rem; }
   .exhibit-list .exhibit {
     background: #262022;
     padding: 1rem; }
+    .exhibit-list .exhibit h2 {
+      margin-top: 0; }
 
 body {
   margin: 0; }

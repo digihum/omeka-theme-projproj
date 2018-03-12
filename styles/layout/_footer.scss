@@ -1,4 +1,12 @@
 footer {
   background-color: $color-dark;
   min-height: 20em;
+  padding: 1rem;
+  img {
+    width: 6em;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+  }
 }

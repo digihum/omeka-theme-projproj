@@ -1,8 +1,8 @@
       </div>
     </main>
     <footer role="contentinfo" class="container footer ">
-        <div>
-            <div>
+        <div class="links">
+            <div class="link-list">
                 <h4>About</h4>
                 <ul>
                     <li>About the Project</li>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="link-list">
                 <h4>The Collections</h4>
                 <ul>
                     <li>Browse Themes</li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="link-list">
                 <h4>Current Activity</h4>
                 <ul>
                     <li>News & Events</li>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="image-list">
                 <h4>Partners</h4>
                 <img src="/themes/projproj/images/partners/ahrc_square.png" />
                 <img src="/themes/projproj/images/partners/bfi_square.png" />
@@ -38,13 +38,12 @@
             </div>
 
         </div>
-        <div>
+        <div class="copyright">
             <span>Copyright © 2018 Projection Project , University of Warwick, All Rights Reserved. </span>
             <span>Terms</span>
             <span>Cookies</span>
-        <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
         </div>
     </footer>
- 
+    <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
 </body>
 </html>

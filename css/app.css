@@ -111,6 +111,7 @@ nav.vertical li {
       left: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.67);
+      z-index: -500;
       filter: blur(18px); }
 
 nav.horizontal {

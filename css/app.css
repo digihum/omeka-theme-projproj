@@ -202,6 +202,7 @@ header.hero {
     flex-direction: column-reverse; }
   @media screen and (max-width: 980px) {
     header.hero {
+      height: auto;
       background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(86, 87, 89, 0.65) 100%); } }
   @media screen and (min-width: 980px) {
     header.hero {

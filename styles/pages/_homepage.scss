@@ -10,6 +10,7 @@ header.hero {
   }
 
   @media screen and (max-width: $break_medium) {
+    height: auto;
     background: linear-gradient(
       to bottom,
       transparent 0%,

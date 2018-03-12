@@ -103,7 +103,7 @@ nav.vertical li {
   nav.vertical li a {
     user-select: none;
     display: inline; }
-    nav.vertical li a::after {
+    nav.vertical li a::before {
       content: "";
       position: absolute;
       top: 0;
@@ -111,7 +111,6 @@ nav.vertical li {
       left: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.67);
-      z-index: -500;
       filter: blur(18px); }
 
 nav.horizontal {

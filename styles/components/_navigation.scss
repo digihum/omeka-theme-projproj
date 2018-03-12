@@ -27,7 +27,7 @@ nav.vertical {
     a {
       user-select: none;
       display: inline;
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -35,7 +35,6 @@ nav.vertical {
         left: 0;
         right: 0;
         background: rgba(0, 0, 0, 0.67);
-        z-index: -500;
         filter: blur(18px);
       }
     }

@@ -22,3 +22,24 @@ nav.horizontal {
     }
   }
 }
+
+.burger-check {
+  display: none;
+}
+label[for="burger-check"] {
+  display: initial !important;
+}
+
+.link.burger {
+  @media (max-width: 1110px) {
+    flex: 0 0 2em;
+  }
+}
+
+label[for="burger-check"] {
+  cursor: pointer;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+}

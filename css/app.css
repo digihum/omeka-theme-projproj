@@ -99,6 +99,22 @@ nav.horizontal {
       display: inline-block;
       margin-right: 1.5em; }
 
+.burger-check {
+  display: none; }
+
+label[for="burger-check"] {
+  display: initial !important; }
+
+@media (max-width: 1110px) {
+  .link.burger {
+    flex: 0 0 2em; } }
+
+label[for="burger-check"] {
+  cursor: pointer; }
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px; }
+
 footer {
   background-color: #252022;
   min-height: 20em; }

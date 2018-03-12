@@ -13,7 +13,15 @@
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <h1 class="site-title"><a href="/">THE CINEMA<br />PROJECTIONIST</a></h1>
     <nav class="navbar navbar-default horizontal" role="navigation">
-        <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
+       
+        <span class='link burger'>
+            <label for="burger-check" class="burger"><i class="fa fa-bars fa-2x"></i></label>
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <div class='navigation'>            
+                <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>              
+            </div>
+        </span>
+
     </nav> 
       
 </header>

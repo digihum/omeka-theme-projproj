@@ -95,6 +95,7 @@ nav.vertical li {
   display: block;
   margin: 1.5rem 0;
   font-size: 1.5em;
+  position: relative;
   font-family: "Josefin Sans"; }
   nav.vertical li::before {
     content: ">> ";
@@ -102,6 +103,16 @@ nav.vertical li {
   nav.vertical li a {
     user-select: none;
     display: inline; }
+    nav.vertical li a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.67);
+      z-index: -500;
+      filter: blur(18px); }
 
 nav.horizontal {
   display: inline-block; }

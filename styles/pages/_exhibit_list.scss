@@ -4,6 +4,9 @@
   grid-row-gap: 2em;
   grid-column-gap: 2em;
   padding: 1.5rem;
+  @media screen and (max-width: $break_small) {
+    grid-template-columns: 1fr;
+  }
   .exhibit {
     background: #262022;
     padding: 1rem;

@@ -399,6 +399,9 @@ body.neatline.show main#content .container {
   grid-row-gap: 2em;
   grid-column-gap: 2em;
   padding: 1.5rem; }
+  @media screen and (max-width: 750px) {
+    .exhibit-list {
+      grid-template-columns: 1fr; } }
   .exhibit-list .exhibit {
     background: #262022;
     padding: 1rem; }

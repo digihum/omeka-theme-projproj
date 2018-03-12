@@ -363,7 +363,7 @@ body.neatline.show main#content .container {
     flex-direction: column;
     height: auto; }
     body.neatline.show #neatline-map .olMapViewport {
-      height: 60vh; }
+      height: 60vh !important; }
   body.neatline.show #static-bubble {
     position: initial;
     max-width: none;

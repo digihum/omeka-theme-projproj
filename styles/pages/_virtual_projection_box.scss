@@ -17,7 +17,7 @@ body.neatline.show {
       flex-direction: column;
       height: auto;
       .olMapViewport {
-        height: 60vh;
+        height: 60vh !important;
       }
     }
 

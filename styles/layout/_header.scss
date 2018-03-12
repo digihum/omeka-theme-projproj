@@ -4,6 +4,7 @@ header.subpage-header {
   border-left: 1em solid $color-highlight;
   background-size: cover;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   h1 {

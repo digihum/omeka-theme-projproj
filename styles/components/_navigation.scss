@@ -34,6 +34,8 @@ nav.horizontal {
   @media screen and (max-width: $break_medium) {
     label[for="burger-check"] {
       display: initial !important;
+      margin: 0 1em;
+      user-select: none;
       cursor: pointer;
     }
 
@@ -41,17 +43,29 @@ nav.horizontal {
       display: block;
     }
 
-    .navigation {
+    ul.navigation {
       display: none;
       position: absolute;
       left: 0;
-      background-color: black;
+      background-color: #262022;
       padding: 1em;
       right: 0;
-      margin: 1.5em 0;
+      margin: 0;
+      margin-top: 1rem;
+      border-bottom: 2px solid white;
+      border-top: 2px solid yellow;
       li {
         display: block;
-        margin: 0;
+        margin: 1.5rem 0;
+        font-size: 1.5em;
+        font-family: "Josefin Sans";
+        &::before {
+          content: ">> ";
+          color: yellow;
+        }
+        a {
+          user-select: none;
+        }
       }
     }
   }

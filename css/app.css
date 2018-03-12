@@ -393,6 +393,16 @@ body.neatline.show main#content .container {
     color: #252022;
     font-family: "Josefin Sans"; }
 
+.exhibit-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5em;
+  grid-column-gap: 2em;
+  padding-top: 1em; }
+  .exhibit-list .exhibit {
+    background: #262022;
+    padding: 1rem; }
+
 body {
   margin: 0; }
 

@@ -15,11 +15,9 @@
     <nav class="navbar navbar-default horizontal" role="navigation">
        
         <span class='link burger'>
-            <label for="burger-check" class="burger"><i class="fa fa-bars fa-2x"></i></label>
-            <input class="burger-check" id="burger-check" type="checkbox">
-            <div class='navigation'>            
-                <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>              
-            </div>
+            <label for="burger-check" class="burger">🍔</label>
+            <input class="burger-check" id="burger-check" type="checkbox">     
+            <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>     
         </span>
 
     </nav> 

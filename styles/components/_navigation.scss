@@ -30,16 +30,19 @@ label[for="burger-check"] {
   display: initial !important;
 }
 
-.link.burger {
-  @media (max-width: 1110px) {
-    flex: 0 0 2em;
-  }
-}
-
 label[for="burger-check"] {
   cursor: pointer;
 }
 
 .burger-check:checked ~ .navigation {
-  max-height: 500px;
+  display: block;
+}
+
+.navigation {
+  position: absolute;
+  left: 0;
+  background-color: black;
+  padding: 1em;
+  right: 0;
+  margin: 1.5em 0;
 }

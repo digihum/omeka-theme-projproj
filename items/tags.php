@@ -1,5 +1,4 @@
 <?php
-    queue_css_file('tags');
     $pageTitle = __('Browse Items');
     echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 ?>

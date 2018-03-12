@@ -15,4 +15,9 @@ footer {
     margin: 0;
     list-style: none;
   }
+
+  .image-list ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

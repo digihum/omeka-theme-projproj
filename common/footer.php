@@ -5,28 +5,28 @@
             <div class="link-list">
                 <h4>About</h4>
                 <ul>
-                    <li>About the Project</li>
-                    <li>Advisory Board</li>
-                    <li>Project Team</li>
-                    <li>Project Partners</li>
+                    <li><a href="#">About the Project</a></li>
+                    <li><a href="#">Advisory Board</a></li>
+                    <li><a href="#">Project Team</a></li>
+                    <li><a href="#">Project Partners</a></li>
                 </ul>
             </div>
 
             <div class="link-list">
                 <h4>The Collections</h4>
                 <ul>
-                    <li>Browse Themes</li>
-                    <li>Virtual Projection Box</li>
-                    <li>The Projectionists Gallery</li>
+                    <li><a href="#">Browse Themes</a></li>
+                    <li><a href="#">Virtual Projection Box</a></li>
+                    <li><a href="#">The Projectionists Gallery</a></li>
                 </ul>
             </div>
 
             <div class="link-list">
                 <h4>Current Activity</h4>
                 <ul>
-                    <li>News & Events</li>
-                    <li>Contact Us</li>
-                    <li>Twitter</li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Twitter</a></li>
                 </ul>
             </div>
 
@@ -42,8 +42,8 @@
         </div>
         <div class="copyright">
             <span>Copyright © 2018 Projection Project , University of Warwick, All Rights Reserved. </span>
-            <span>Terms</span>
-            <span>Cookies</span>
+            <span><a href="#">Terms</a></span>
+            <span><a href="#">Cookies</a></span>
         </div>
     </footer>
     <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>

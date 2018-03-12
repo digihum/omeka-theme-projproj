@@ -130,6 +130,10 @@ footer {
     width: 6em; }
   footer .copyright {
     margin-top: 1rem; }
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
 
 header.subpage-header {
   background-image: url(/themes/projproj/images/hero/hero-1.jpg);

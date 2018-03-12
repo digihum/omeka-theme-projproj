@@ -32,9 +32,11 @@
 
             <div class="image-list">
                 <h4>Partners</h4>
-                <img src="/themes/projproj/images/partners/ahrc_square.png" />
-                <img src="/themes/projproj/images/partners/bfi_square.png" />
-                <img src="/themes/projproj/images/partners/flatpack_square.png" />
+                <ul>
+                    <li><img src="/themes/projproj/images/partners/ahrc_square.png" /></li>
+                    <li><img src="/themes/projproj/images/partners/bfi_square.png" /></li>
+                    <li><img src="/themes/projproj/images/partners/flatpack_square.png" /></li>
+                </ul>
             </div>
 
         </div>

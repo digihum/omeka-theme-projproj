@@ -348,13 +348,19 @@ body#items.browse div.item.hentry .row {
   grid-column-gap: 2em;
   padding-top: 1em; }
 
-body.neatline.show container {
+body.neatline.show main#content .container {
   padding: 0;
   max-width: none; }
-  body.neatline.show container h1 {
+  body.neatline.show main#content .container h1 {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%; }
+
+#waypoints {
+  background: #ffff00; }
+  #waypoints a {
+    color: #252022;
+    font-family: "Josefin Sans"; }
 
 body {
   margin: 0; }

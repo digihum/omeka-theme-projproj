@@ -1,12 +1,20 @@
 body.neatline.show {
-  container {
+  main#content .container {
     padding: 0;
     max-width: none;
 
     h1 {
-      max-width: 1000px;
+      max-width: $column-width;
       margin: 0 auto;
       width: 100%;
     }
+  }
+}
+
+#waypoints {
+  background: $color-highlight;
+  a {
+    color: $color-dark;
+    font-family: "Josefin Sans";
   }
 }

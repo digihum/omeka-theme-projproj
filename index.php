@@ -1,5 +1,13 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
+<section id="quote">
+    <p>When you were about to throw the film onto the screen when it was 35mm, there
+    was always that little heart-missing-a-beat moment. You’d think, ‘Is it all going to come
+    together? Is it going to be the right way? Is it going to be in rack? Is the sound going
+    to be right?’ And then when it’s correct, then you can relax. It was exciting.
+    </p>
+</section>
+
 <section id="archives">
     <div class="featured-images">
     <?php echo random_featured_items(4); ?>
@@ -81,13 +89,6 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
     </div>
 </section>
 
-<section id="quote">
-    <p>When you were about to throw the film onto the screen when it was 35mm, there
-    was always that little heart-missing-a-beat moment. You’d think, ‘Is it all going to come
-    together? Is it going to be the right way? Is it going to be in rack? Is the sound going
-    to be right?’ And then when it’s correct, then you can relax. It was exciting.
-    </p>
-</section>
 
 <div class="reel-container" style="background-position: 70vw 12em;"></div>
 <section id="vpb">

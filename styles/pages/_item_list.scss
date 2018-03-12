@@ -6,6 +6,12 @@ body#items.browse {
       grid-row-gap: 5em;
       grid-column-gap: 2em;
       padding-top: 1em;
+      @media screen and (max-width: $break_medium) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (max-width: $break_small) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

@@ -347,6 +347,12 @@ body#items.browse div.item.hentry .row {
   grid-row-gap: 5em;
   grid-column-gap: 2em;
   padding-top: 1em; }
+  @media screen and (max-width: 980px) {
+    body#items.browse div.item.hentry .row {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 750px) {
+    body#items.browse div.item.hentry .row {
+      grid-template-columns: 1fr; } }
 
 body.neatline.show main#content .container {
   padding: 0;
@@ -377,7 +383,7 @@ body.neatline.show main#content .container {
       font-family: "Open Sans", sans-serif; }
     body.neatline.show #static-bubble a.btn::before {
       content: ">> "; }
-  body.neatline.show #waypoints {
+  body.neatline.show #neatline #waypoints {
     top: 0;
     right: 0; } }
 

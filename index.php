@@ -103,7 +103,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
         commentary from the research team to be
         uncovered as you explore the interactive
         Virtual Projection Box.</p>
-        <a href='/neatline/fullscreen/projection-box#records/114'>Explore the projection box >></a>
+        <a href='/neatline/show/projection-box#records/114'>Explore the projection box >></a>
     </div> 
 </section>
 <!--

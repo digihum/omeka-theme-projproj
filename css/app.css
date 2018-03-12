@@ -221,13 +221,15 @@ header.hero {
     @media screen and (max-width: 980px) {
       header.hero .highlight {
         height: 1rem; } }
-  @media screen and (min-width: 980px) {
-    header.hero .sidebar {
-      width: 25em;
-      background: linear-gradient(to bottom, rgba(86, 87, 89, 0.2) 0%, rgba(86, 87, 89, 0.65) 100%); } }
-  header.hero .sidebar nav li {
-    font-size: 1.2em;
-    padding: 0.5em 1em; }
+  header.hero .sidebar {
+    vertical-align: middle; }
+    @media screen and (min-width: 980px) {
+      header.hero .sidebar {
+        width: 25em;
+        background: linear-gradient(to bottom, rgba(86, 87, 89, 0.2) 0%, rgba(86, 87, 89, 0.65) 100%); } }
+    header.hero .sidebar nav li {
+      font-size: 1.2em;
+      padding: 0.5em 1em; }
   header.hero .title-area {
     padding: 1rem 2rem; }
     @media screen and (max-width: 980px) {

@@ -21,36 +21,38 @@ nav.horizontal {
       margin-right: 1.5em;
     }
   }
+  label[for="burger-check"] {
+    display: none;
+  }
 }
 
 .burger-check {
   display: none;
 }
-label[for="burger-check"] {
-  display: initial !important;
-}
 
-label[for="burger-check"] {
-  cursor: pointer;
-}
+nav.horizontal {
+  @media screen and (max-width: $break_medium) {
+    label[for="burger-check"] {
+      display: initial !important;
+      cursor: pointer;
+    }
 
-.navigation {
-  display: none;
-}
+    .burger-check:checked ~ .navigation {
+      display: block;
+    }
 
-.burger-check:checked ~ .navigation {
-  display: block;
-}
-
-.navigation {
-  position: absolute;
-  left: 0;
-  background-color: black;
-  padding: 1em;
-  right: 0;
-  margin: 1.5em 0;
-}
-nav.horizontal ul.navigation li {
-  display: block;
-  margin: 0;
+    .navigation {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: black;
+      padding: 1em;
+      right: 0;
+      margin: 1.5em 0;
+      li {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
 }

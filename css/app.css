@@ -333,9 +333,24 @@ body#home section#tours {
       body#home section#tours .featured-images .bottom div img {
         width: 100%; }
 
-body#home section#quote p {
+body#home section#quote blockquote {
   font-size: 2rem;
-  font-weight: lighter; }
+  font-weight: lighter;
+  position: relative; }
+  body#home section#quote blockquote::before {
+    content: "\201C";
+    font-size: 99pt;
+    position: absolute;
+    left: -1em;
+    top: -47px;
+    font-family: sans-serif; }
+  body#home section#quote blockquote::after {
+    content: "\201D";
+    font-size: 99pt;
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.6em;
+    font-family: sans-serif; }
 
 body#home section#vpb {
   display: flex;

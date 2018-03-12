@@ -7,6 +7,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <?php echo pagination_links(); ?>
 
+<div class="exhibit-list">
 <?php $exhibitCount = 0; ?>
 <?php foreach (loop('exhibit') as $exhibit): ?>
     <?php $exhibitCount++; ?>
@@ -23,7 +24,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
         <?php endif; ?>
     </div>
 <?php endforeach; ?>
-
+</div>
 <?php echo pagination_links(); ?>
 
 <?php else: ?>

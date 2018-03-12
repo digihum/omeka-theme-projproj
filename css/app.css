@@ -132,7 +132,8 @@ nav.horizontal {
         content: ">> ";
         color: yellow; }
       nav.horizontal ul.navigation li a {
-        user-select: none; } }
+        user-select: none;
+        display: inline; } }
 
 footer {
   background-color: #252022;
@@ -235,15 +236,16 @@ header.hero {
       color: yellow;
       margin: 0;
       position: relative; }
-  header.hero .shadow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.67);
-    z-index: -500;
-    filter: blur(30px); }
+
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.67);
+  z-index: -500;
+  filter: blur(30px); }
 
 body#home h2 {
   font-size: 3em;

@@ -91,6 +91,18 @@ nav ul {
     text-decoration: none;
     display: block; }
 
+nav.vertical li {
+  display: block;
+  margin: 1.5rem 0;
+  font-size: 1.5em;
+  font-family: "Josefin Sans"; }
+  nav.vertical li::before {
+    content: ">> ";
+    color: yellow; }
+  nav.vertical li a {
+    user-select: none;
+    display: inline; }
+
 nav.horizontal {
   display: inline-block; }
   nav.horizontal ul.navigation {
@@ -152,7 +164,7 @@ footer {
     justify-content: space-evenly; }
 
 header.subpage-header {
-  background-image: url(/themes/projproj/images/hero/hero-1.jpg);
+  background-image: url(/themes/projproj/images/header.jpg);
   padding: 0.5em;
   border-left: 1em solid #ffff00;
   background-size: cover;

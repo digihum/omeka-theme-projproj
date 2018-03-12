@@ -12,6 +12,23 @@ nav {
   }
 }
 
+nav.vertical {
+  li {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.5em;
+    font-family: "Josefin Sans";
+    &::before {
+      content: ">> ";
+      color: yellow;
+    }
+    a {
+      user-select: none;
+      display: inline;
+    }
+  }
+}
+
 nav.horizontal {
   display: inline-block;
   ul.navigation {

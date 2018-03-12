@@ -10,7 +10,7 @@
     </div>
     <div class="main">
         <div class="sidebar">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default vertical" role="navigation">
                 <?php echo public_nav_main(array('role' => 'navigation'))->setMaxDepth(0); ?>  
             </nav> 
         </div>

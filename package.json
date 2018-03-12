@@ -12,7 +12,9 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "imagemin-cli": "^3.0.0"
+  },
   "dependencies": {
     "node-sass": "^4.7.2"
   }

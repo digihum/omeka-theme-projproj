@@ -32,9 +32,9 @@
 
             <div>
                 <h4>Partners</h4>
-                <img src="/theme/projproj/images/partners/ahrc_square.png" />
-                <img src="/theme/projproj/images/partners/bfi_square.png" />
-                <img src="/theme/projproj/images/partners/flatpack_square.png" />
+                <img src="/themes/projproj/images/partners/ahrc_square.png" />
+                <img src="/themes/projproj/images/partners/bfi_square.png" />
+                <img src="/themes/projproj/images/partners/flatpack_square.png" />
             </div>
 
         </div>

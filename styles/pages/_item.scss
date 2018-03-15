@@ -21,14 +21,14 @@ body.items.show {
       }
     }
   }
-
-  .transcript-toggle:checked ~ #show-transcript {
-    display: block;
-  }
 }
 
 #show-transcript {
   display: none;
+}
+
+.transcript-toggle:checked ~ #show-transcript {
+  display: block;
 }
 
 .item-file.image-jpeg {

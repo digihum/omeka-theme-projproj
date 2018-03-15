@@ -540,11 +540,11 @@ body.items.show .container #collection p {
     vertical-align: top;
     text-align: left; }
 
-.element-texts .transcript-toggle:checked ~ #show-transcript {
-  display: block; }
-
 #show-transcript {
   display: none; }
+
+.transcript-toggle:checked ~ #show-transcript {
+  display: block; }
 
 .item-file.image-jpeg {
   text-align: center;

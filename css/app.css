@@ -459,6 +459,9 @@ body#items.browse div.item.hentry .row {
     body#items.browse div.item.hentry .row {
       grid-template-columns: 1fr; } }
 
+.item-img {
+  text-align: center; }
+
 body.neatline.show main#content .container {
   padding: 0;
   max-width: 1400px; }

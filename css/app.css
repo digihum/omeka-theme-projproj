@@ -531,6 +531,12 @@ body.neatline.show #neatline #waypoints {
     vertical-align: top;
     text-align: left; }
 
+.item-file.image-jpeg {
+  text-align: center;
+  margin: 2em 0; }
+  .item-file.image-jpeg img {
+    max-height: 30em; }
+
 body {
   margin: 0; }
 

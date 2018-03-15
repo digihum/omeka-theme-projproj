@@ -19,6 +19,9 @@ body.neatline.show {
     .olMapViewport {
       height: 60vh !important;
     }
+    .nl-fullscreen {
+      display: none;
+    }
   }
 
   #static-bubble {
@@ -31,7 +34,7 @@ body.neatline.show {
 
     @media screen and (min-width: $break_medium) {
       flex-direction: column;
-      max-width: 40em;
+      flex: 0 0 28em;
     }
     background: #565759;
     .title {

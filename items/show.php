@@ -14,13 +14,13 @@ else :
      
     <?php if (metadata('item', 'Collection Name')): ?>
         <div id="collection" class="element">
-            <div class="element-text"><p><em>Part of:</em> <?php echo link_to_collection_for_item(); ?></p></div>
+            <div class="element-text"><p><em>Part of: <?php echo link_to_collection_for_item(); ?></em></p></div>
         </div>
     <?php endif; ?>
 
     <?php if (metadata('item', 'has tags')): ?>
         <div id="item-tags" class="element">
-            <div class="element-text"><?php echo tag_string('item'); ?></div>
+            <div class="element-text"><?php echo tag_string('item', 'items/browse', ''); ?></div>
         </div>
     <?php endif;?>
        

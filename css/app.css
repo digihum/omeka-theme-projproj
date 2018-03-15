@@ -527,6 +527,12 @@ body.neatline.show #neatline #waypoints {
     .exhibit-list .exhibit h2 {
       margin-top: 0; }
 
+body.items.show .container h1 {
+  margin-bottom: 0; }
+
+body.items.show .container #collection p {
+  margin-top: 0; }
+
 .element-texts table {
   border-spacing: 1rem;
   border-collapse: separate; }
@@ -548,6 +554,12 @@ body.neatline.show #neatline #waypoints {
   margin: 1rem; }
   .outputs h3 {
     margin: 0; }
+
+#item-tags a {
+  padding: 0.2em 0.5em;
+  background: #262022;
+  font-size: smaller;
+  border-radius: 4px; }
 
 body {
   margin: 0; }

@@ -4,6 +4,10 @@ h3,
 h4 {
   font-family: "Josefin Sans"; }
 
+h4 {
+  font-weight: lighter;
+  font-size: 16pt; }
+
 body {
   color: white;
   background-color: #565759;

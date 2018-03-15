@@ -1,14 +1,11 @@
 body.neatline.show {
   main#content .container {
     padding: 0;
-    max-width: none;
+    max-width: 1400px;
+  }
 
-    h1 {
-      max-width: $column-width;
-      margin: 0 auto;
-      width: 100%;
-      padding: 1.5rem;
-    }
+  #neatline {
+    margin-bottom: 2em;
   }
 
   #neatline-map {
@@ -28,14 +25,22 @@ body.neatline.show {
     position: initial;
     max-width: none;
     max-height: none;
-    background: #242321;
     color: white;
     font-family: "Josefin Sans";
+
+    @media screen and (main-width: $break_medium) {
+      flex-direction: column;
+      max-width: 40em;
+    }
+    background: #565759;
     .title {
       font-size: 1.5rem;
     }
     .content {
       font-family: "Open Sans", sans-serif;
+    }
+    .close {
+      display: none;
     }
     a.btn {
       &::before {

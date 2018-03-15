@@ -461,12 +461,10 @@ body#items.browse div.item.hentry .row {
 
 body.neatline.show main#content .container {
   padding: 0;
-  max-width: none; }
-  body.neatline.show main#content .container h1 {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 1.5rem; }
+  max-width: 1400px; }
+
+body.neatline.show #neatline {
+  margin-bottom: 2em; }
 
 body.neatline.show #neatline-map {
   display: flex;
@@ -482,13 +480,19 @@ body.neatline.show #static-bubble {
   position: initial;
   max-width: none;
   max-height: none;
-  background: #242321;
   color: white;
-  font-family: "Josefin Sans"; }
+  font-family: "Josefin Sans";
+  background: #565759; }
+  @media screen and (main-width: 980px) {
+    body.neatline.show #static-bubble {
+      flex-direction: column;
+      max-width: 40em; } }
   body.neatline.show #static-bubble .title {
     font-size: 1.5rem; }
   body.neatline.show #static-bubble .content {
     font-family: "Open Sans", sans-serif; }
+  body.neatline.show #static-bubble .close {
+    display: none; }
   body.neatline.show #static-bubble a.btn::before {
     content: ">> "; }
 

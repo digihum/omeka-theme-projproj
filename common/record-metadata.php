@@ -7,7 +7,7 @@
     <?php endif; ?>
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
     <tr id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="row">
-        <td><h4><?php echo html_escape(__($elementName)); ?></h4></td>
+        <th><?php echo html_escape(__($elementName)); ?></th>
         <td>
         <?php foreach ($elementInfo['texts'] as $text): ?>
             <div class="element-text"><?php echo $text; ?></div>

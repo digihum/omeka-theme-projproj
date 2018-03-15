@@ -21,6 +21,14 @@ body.items.show {
       }
     }
   }
+
+  #show-transcript {
+    display: none;
+  }
+
+  .transcript-toggle:checked ~ #show-transcript {
+    display: block;
+  }
 }
 
 .item-file.image-jpeg {
@@ -47,4 +55,8 @@ body.items.show {
   background: #262022;
   font-size: smaller;
   border-radius: 4px;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  overflow-wrap: break-word;
+  display: inline-block;
 }

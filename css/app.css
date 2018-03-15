@@ -540,6 +540,12 @@ body.items.show .container #collection p {
     vertical-align: top;
     text-align: left; }
 
+.element-texts #show-transcript {
+  display: none; }
+
+.element-texts .transcript-toggle:checked ~ #show-transcript {
+  display: block; }
+
 .item-file.image-jpeg {
   text-align: center;
   margin: 2em 0; }
@@ -559,7 +565,11 @@ body.items.show .container #collection p {
   padding: 0.2em 0.5em;
   background: #262022;
   font-size: smaller;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  overflow-wrap: break-word;
+  display: inline-block; }
 
 body {
   margin: 0; }

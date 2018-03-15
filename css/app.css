@@ -160,12 +160,12 @@ nav.horizontal {
 
 footer {
   background-color: #252022;
-  min-height: 20em;
   padding: 1rem; }
   footer img {
     width: 6em; }
   footer .copyright {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    font-size: small; }
   footer ul {
     padding: 0;
     margin: 0;

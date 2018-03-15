@@ -25,6 +25,10 @@ body.items.show {
 
 #show-transcript {
   display: none;
+  padding: 1em;
+  background: #262022;
+  border-radius: 4px;
+  margin: 1em 0;
 }
 
 .transcript-toggle:checked ~ #show-transcript {

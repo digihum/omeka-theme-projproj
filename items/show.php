@@ -47,8 +47,8 @@ else :
                             <!-- The following returns all of the files associated with an item. -->
     <?php if (metadata('item', array('Item Type Metadata','Transcription'))): ?>
         <div id="itemTranscript" class="element">
-            <input name="show-transcript-checkbox" type="checkbox" class="transcript-toggle" />
-            <label for="show-transcript-checkbox" ><?php echo __('Show Transcript'); ?></label>
+            <input name="show-transcript-checkbox" id="toggle-transcript-checkbox" type="checkbox" class="transcript-toggle" />
+            <label for="toggle-transcript-checkbox" ><?php echo __('Show Transcript'); ?></label>
             <div id="show-transcript" class="element-text"><?php echo metadata('item', array('Item Type Metadata','Transcription')); ?></div>
         </div>
     <?php endif; ?> 

@@ -468,29 +468,33 @@ body.neatline.show main#content .container {
     width: 100%;
     padding: 1.5rem; }
 
-@media screen and (max-width: 980px) {
-  body.neatline.show #neatline-map {
-    display: flex;
-    flex-direction: column;
-    height: auto; }
-    body.neatline.show #neatline-map .olMapViewport {
-      height: 60vh !important; }
-  body.neatline.show #static-bubble {
-    position: initial;
-    max-width: none;
-    max-height: none;
-    background: #242321;
-    color: white;
-    font-family: "Josefin Sans"; }
-    body.neatline.show #static-bubble .title {
-      font-size: 1.5rem; }
-    body.neatline.show #static-bubble .content {
-      font-family: "Open Sans", sans-serif; }
-    body.neatline.show #static-bubble a.btn::before {
-      content: ">> "; }
-  body.neatline.show #neatline #waypoints {
-    top: 0;
-    right: 0; } }
+body.neatline.show #neatline-map {
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto; }
+  @media screen and (max-width: 980px) {
+    body.neatline.show #neatline-map {
+      flex-direction: column; } }
+  body.neatline.show #neatline-map .olMapViewport {
+    height: 60vh !important; }
+
+body.neatline.show #static-bubble {
+  position: initial;
+  max-width: none;
+  max-height: none;
+  background: #242321;
+  color: white;
+  font-family: "Josefin Sans"; }
+  body.neatline.show #static-bubble .title {
+    font-size: 1.5rem; }
+  body.neatline.show #static-bubble .content {
+    font-family: "Open Sans", sans-serif; }
+  body.neatline.show #static-bubble a.btn::before {
+    content: ">> "; }
+
+body.neatline.show #neatline #waypoints {
+  top: 0;
+  right: 0; }
 
 #waypoints {
   background: #ffff00; }

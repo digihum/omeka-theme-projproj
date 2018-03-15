@@ -11,40 +11,42 @@ body.neatline.show {
     }
   }
 
-  @media screen and (max-width: $break_medium) {
-    #neatline-map {
-      display: flex;
+  #neatline-map {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: $break_medium) {
       flex-direction: column;
-      height: auto;
-      .olMapViewport {
-        height: 60vh !important;
-      }
     }
+    height: auto;
+    .olMapViewport {
+      height: 60vh !important;
+    }
+  }
 
-    #static-bubble {
-      position: initial;
-      max-width: none;
-      max-height: none;
-      background: #242321;
-      color: white;
-      font-family: "Josefin Sans";
-      .title {
-        font-size: 1.5rem;
-      }
-      .content {
-        font-family: "Open Sans", sans-serif;
-      }
-      a.btn {
-        &::before {
-          content: ">> ";
-        }
+  #static-bubble {
+    position: initial;
+    max-width: none;
+    max-height: none;
+    background: #242321;
+    color: white;
+    font-family: "Josefin Sans";
+    .title {
+      font-size: 1.5rem;
+    }
+    .content {
+      font-family: "Open Sans", sans-serif;
+    }
+    a.btn {
+      &::before {
+        content: ">> ";
       }
     }
+  }
 
-    #neatline #waypoints {
-      top: 0;
-      right: 0;
-    }
+  #neatline #waypoints {
+    top: 0;
+    right: 0;
   }
 }
 

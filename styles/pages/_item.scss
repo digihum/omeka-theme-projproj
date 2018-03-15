@@ -22,13 +22,13 @@ body.items.show {
     }
   }
 
-  #show-transcript {
-    display: none;
-  }
-
   .transcript-toggle:checked ~ #show-transcript {
     display: block;
   }
+}
+
+#show-transcript {
+  display: none;
 }
 
 .item-file.image-jpeg {

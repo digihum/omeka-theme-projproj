@@ -28,6 +28,8 @@
             <?php echo link_to_item(item_image('square_thumbnail')); ?>
         </div>
         <br />
+        <?php else: ?>
+            <?php echo link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />"); ?>
         <?php endif; ?>
 
         <div class="item-meta">

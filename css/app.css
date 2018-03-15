@@ -524,6 +524,13 @@ body.neatline.show #neatline #waypoints {
     .exhibit-list .exhibit h2 {
       margin-top: 0; }
 
+.element-texts table {
+  border-spacing: 1rem;
+  border-collapse: separate; }
+  .element-texts table tbody tr th {
+    vertical-align: top;
+    text-align: left; }
+
 body {
   margin: 0; }
 

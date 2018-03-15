@@ -482,8 +482,9 @@ body.neatline.show #static-bubble {
   max-height: none;
   color: white;
   font-family: "Josefin Sans";
+  display: block !important;
   background: #565759; }
-  @media screen and (main-width: 980px) {
+  @media screen and (min-width: 980px) {
     body.neatline.show #static-bubble {
       flex-direction: column;
       max-width: 40em; } }

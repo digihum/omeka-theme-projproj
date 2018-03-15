@@ -538,6 +538,13 @@ body.neatline.show #neatline #waypoints {
     max-height: 30em;
     max-width: 100%; }
 
+.outputs {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 4px; }
+  .outputs h3 {
+    margin: 0; }
+
 body {
   margin: 0; }
 

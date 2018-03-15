@@ -57,6 +57,9 @@ else :
     <div class="element-texts">
         <?php echo all_element_texts('item'); ?>
     </div>                
+
+
+    <?php echo get_specific_plugin_hook_output('ItemRelations','public_items_show', array('view' => $this, 'item' => $item)); ?>  
                  
     <div class="outputs">
         <div id="item-citation" class="element">
@@ -72,8 +75,7 @@ else :
               
 	<!-- <?php CommentingPlugin::showComments(); ?> -->
 
-
-    <?php echo get_specific_plugin_hook_output('ItemRelations','public_items_show', array('view' => $this, 'item' => $item)); ?>    
+  
 
 <?php 
 

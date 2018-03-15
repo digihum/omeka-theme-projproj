@@ -16,8 +16,18 @@ footer {
     list-style: none;
   }
 
-  .image-list ul {
+  .links {
+    .image-list ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        margin: 0 1em;
+      }
+    }
     display: flex;
     justify-content: space-evenly;
+    @media screen and (max-width: $break_medium) {
+      display: block;
+    }
   }
 }

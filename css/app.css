@@ -170,9 +170,17 @@ footer {
     padding: 0;
     margin: 0;
     list-style: none; }
-  footer .image-list ul {
+  footer .links {
     display: flex;
     justify-content: space-evenly; }
+    footer .links .image-list ul {
+      display: flex;
+      justify-content: space-evenly; }
+      footer .links .image-list ul li {
+        margin: 0 1em; }
+    @media screen and (max-width: 980px) {
+      footer .links {
+        display: block; } }
 
 header.subpage-header {
   background-image: url(/themes/projproj/images/header.png);

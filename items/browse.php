@@ -29,7 +29,11 @@
         </div>
         <br />
         <?php else: ?>
-            <?php echo link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />"); ?>
+            <div class="item-img">
+                <?php echo link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />"); ?>
+            </div>
+            <br />
+            
         <?php endif; ?>
 
         <div class="item-meta">

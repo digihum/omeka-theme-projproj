@@ -17,16 +17,12 @@
 
                 <?php if (metadata('collection', 'total_items') > 0): ?>
                     <?php foreach (loop('items', $items) as $item): ?>
-                                    <hr/>
                         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
-
-                        <small>Published <?php echo  metadata('item', array('Dublin Core', 'Date')) ?></small>
-                        
-                        <h3><?php echo $itemTitle; ?></h3>
+                    
             
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
-
+                            <h3><?php echo $itemTitle; ?></h3>
                             <?php if ($text = metadata('item', array('Item Type Metadata', 'Text'))): ?>
                                 <div class="item-description">
                                     <p><?php echo $text; ?></p>

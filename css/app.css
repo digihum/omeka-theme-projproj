@@ -396,6 +396,25 @@ body#home section#vpb {
     .reel-container {
       background-image: none; } }
 
+.warwick-logo {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  z-index: 1000; }
+  .warwick-logo img {
+    position: relative;
+    width: 6rem; }
+    .warwick-logo img::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.67);
+      z-index: -500;
+      filter: blur(18px); }
+
 div#exhibit-blocks::after {
   content: "";
   display: block;

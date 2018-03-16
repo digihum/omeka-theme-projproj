@@ -21,7 +21,7 @@
                     
             
                     <div class="row">
-                        <div class="col-xs-12 col-md-8">
+                        <div>
                             <h3><?php echo $itemTitle; ?></h3>
                             <?php if ($text = metadata('item', array('Item Type Metadata', 'Text'))): ?>
                                 <div class="item-description">
@@ -30,9 +30,6 @@
                             <?php elseif ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
                                 <div class="item-description">
                                     <?php echo $description; ?>
-                                </div>
-                                <div class="news-footer">
-                                    <p>Posted on <?= metadata('item', array('Dublin Core', 'Date')) ?>, by <?= metadata('item', array('Dublin Core', 'Publisher')) ?>.</p>
                                 </div>
                             <?php endif; ?>
 

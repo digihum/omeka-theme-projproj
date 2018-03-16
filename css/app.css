@@ -245,7 +245,8 @@ header.hero {
       font-size: 1.2em;
       padding: 0.5em 1em; }
   header.hero .title-area {
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    position: relative; }
     @media screen and (max-width: 980px) {
       header.hero .title-area {
         display: flex;

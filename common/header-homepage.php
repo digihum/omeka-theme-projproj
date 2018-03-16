@@ -23,6 +23,7 @@
                 <span>
                     <span>PROJECTIONIST</span><span class="shadow"></span>
                 </span></h1>
+            <img src="/themes/projproj/warwick.svg" width="4em" height="4em" />
         </div>
     </div>
 </header>

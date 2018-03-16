@@ -55,9 +55,6 @@
 
         </div>
 
-
-        <?php else: ?>
-            <p><?php echo __("There are currently no items within this collection."); ?></p>
         <?php endif; ?>
     </div><!-- end collection-items -->
 

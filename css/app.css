@@ -575,6 +575,22 @@ body.items.show .container #collection p {
   overflow-wrap: break-word;
   display: inline-block; }
 
+img.full-width {
+  width: 100%; }
+
+#collection-items {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-row-gap: 5em;
+  grid-column-gap: 2em;
+  padding-top: 1em; }
+  @media screen and (max-width: 980px) {
+    #collection-items {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 750px) {
+    #collection-items {
+      grid-template-columns: 1fr; } }
+
 body {
   margin: 0; }
 

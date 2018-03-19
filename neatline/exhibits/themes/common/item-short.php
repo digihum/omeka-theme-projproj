@@ -9,12 +9,19 @@
   <?php echo files_for_item(); ?>
 <?php endif; ?>
 
+<?php echo get_specific_plugin_hook_output('ItemRelations','public_items_show', array('view' => $this, 'item' => $item)); ?>    
 <!-- Link. -->
 <div class="more-link">
 <?php echo link_to(
   get_current_record('item'), 'show', 'Technical Details', ['class' => 'btn btn-warning btn-block']
 ); ?>
-</div>
+
+<?php CommentingPlugin::showComments(); 
+
+?>
+
+<?php echo '<a href="/items/show/' . $item['id'] .'#comments" class="btn btn-primary btn-block" target="_blank">Add a comment</a>'; ?>
+
 <script>
 Neatline.module('Presenter.StaticBubble', function(StaticBubble) {
 

@@ -530,7 +530,10 @@ body.neatline.show #static-bubble {
 
 body.neatline.show #neatline #waypoints {
   top: 0;
-  right: 0; }
+  right: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 2px;
+  max-width: none; }
 
 #waypoints {
   background: #ffff00; }

@@ -12,7 +12,7 @@
 <!-- Link. -->
 <div class="more-link">
 <?php echo link_to(
-  get_current_record('item'), 'show', 'Technical Details', ['class' => 'btn btn-warning btn-block']
+  get_current_record('item'), 'show', 'View Details', ['class' => 'btn btn-warning btn-block']
 ); ?>
 </div>
 

@@ -482,8 +482,11 @@ body#items.browse div.item.hentry .row {
 .item-img {
   text-align: center; }
 
+body.neatline.show .nl-fullscreen {
+  display: none; }
+
 body.neatline.show main#content .container {
-  padding: 0;
+  padding: 1em 0;
   max-width: 1400px; }
 
 body.neatline.show #neatline {
@@ -498,7 +501,7 @@ body.neatline.show #neatline-map {
       flex-direction: column; } }
   body.neatline.show #neatline-map .olMapViewport {
     height: 60vh !important; }
-  body.neatline.show #neatline-map .nl-fullscreen {
+  body.neatline.show #neatline-map #OpenLayers_Control_MaximizeDiv {
     display: none; }
 
 body.neatline.show #static-bubble {

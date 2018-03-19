@@ -1,6 +1,10 @@
 body.neatline.show {
+  .nl-fullscreen {
+    display: none;
+  }
+
   main#content .container {
-    padding: 0;
+    padding: 1em 0;
     max-width: 1400px;
   }
 
@@ -19,7 +23,8 @@ body.neatline.show {
     .olMapViewport {
       height: 60vh !important;
     }
-    .nl-fullscreen {
+
+    #OpenLayers_Control_MaximizeDiv {
       display: none;
     }
   }

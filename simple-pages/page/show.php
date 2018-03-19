@@ -19,7 +19,7 @@ echo head(array(
     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
     echo $this->shortcodes($text);
     ?>
-    <div class="reel-container" style="background-position: -16vw 0em;"></div>
+    
 </div>
 
 <?php echo foot(); ?>

@@ -1,5 +1,16 @@
-.hero-image {
+@mixin responsive-hero-image($name) {
+  @media screen and (max-width: 800px) {
+    background-image: url("/themes/projproj/images/hero/low/#{$name}");
+  }
+  @media screen and (max-width: 2000px) and (min-width: 800px) {
+    background-image: url("/themes/projproj/images/hero/med/#{$name}");
+  }
+  @media screen and (min-width: 2000px) {
+    background-image: url("/themes/projproj/images/hero/high/#{$name}");
+  }
+}
 
+.hero-image {
   width: 100%;
   height: 130vh;
   background-size: cover;
@@ -10,58 +21,94 @@
   z-index: -1000;
 
   &.slide-1 {
-    background-image: url('/themes/projproj/images/hero/hero-1.jpg');
     animation: fade 40s infinite;
+    @include responsive-hero-image("hero-1.jpg");
   }
 
   &.slide-2 {
-    background-image: url('/themes/projproj/images/hero/hero-2.jpg');
     animation: fade2 40s infinite;
+    @include responsive-hero-image("hero-2.jpg");
   }
 
   &.slide-3 {
-    background-image: url('/themes/projproj/images/hero/hero-3.jpg');
     animation: fade3 40s infinite;
+    @include responsive-hero-image("hero-3.jpg");
   }
 
   &.slide-4 {
-    background-image: url('/themes/projproj/images/hero/hero-4.jpg');
     animation: fade4 40s infinite;
+    @include responsive-hero-image("hero-4.jpg");
   }
 }
 
-@keyframes fade
-{
-  0%   {opacity:1}
-  25% { opacity: 0}
-  50% { opacity: 0}
-  75% { opacity: 0 }
-  100% { opacity: 1}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes fade2
-{
-  0%   {opacity: 0}
-  25% { opacity: 1}
-  50% { opacity: 0}
-  75% { opacity: 0 }
-  100% { opacity: 0}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes fade3
-{
-  0%   {opacity: 0}
-  25% { opacity: 0}
-  50% { opacity: 1}
-  75% { opacity: 0 }
-  100% { opacity: 0}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes fade4
-{
-  0%   {opacity: 0}
-  25% { opacity: 0}
-  50% { opacity: 0}
-  75% { opacity: 1 }
-  100% { opacity: 0}
+@keyframes fade4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

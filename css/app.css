@@ -27,17 +27,49 @@ a {
   left: 0;
   z-index: -1000; }
   .hero-image.slide-1 {
-    background-image: url("/themes/projproj/images/hero/hero-1.jpg");
     animation: fade 40s infinite; }
+    @media screen and (max-width: 800px) {
+      .hero-image.slide-1 {
+        background-image: url("/themes/projproj/images/hero/low/hero-1.jpg"); } }
+    @media screen and (max-width: 2000px) and (min-width: 800px) {
+      .hero-image.slide-1 {
+        background-image: url("/themes/projproj/images/hero/med/hero-1.jpg"); } }
+    @media screen and (min-width: 2000px) {
+      .hero-image.slide-1 {
+        background-image: url("/themes/projproj/images/hero/high/hero-1.jpg"); } }
   .hero-image.slide-2 {
-    background-image: url("/themes/projproj/images/hero/hero-2.jpg");
     animation: fade2 40s infinite; }
+    @media screen and (max-width: 800px) {
+      .hero-image.slide-2 {
+        background-image: url("/themes/projproj/images/hero/low/hero-2.jpg"); } }
+    @media screen and (max-width: 2000px) and (min-width: 800px) {
+      .hero-image.slide-2 {
+        background-image: url("/themes/projproj/images/hero/med/hero-2.jpg"); } }
+    @media screen and (min-width: 2000px) {
+      .hero-image.slide-2 {
+        background-image: url("/themes/projproj/images/hero/high/hero-2.jpg"); } }
   .hero-image.slide-3 {
-    background-image: url("/themes/projproj/images/hero/hero-3.jpg");
     animation: fade3 40s infinite; }
+    @media screen and (max-width: 800px) {
+      .hero-image.slide-3 {
+        background-image: url("/themes/projproj/images/hero/low/hero-3.jpg"); } }
+    @media screen and (max-width: 2000px) and (min-width: 800px) {
+      .hero-image.slide-3 {
+        background-image: url("/themes/projproj/images/hero/med/hero-3.jpg"); } }
+    @media screen and (min-width: 2000px) {
+      .hero-image.slide-3 {
+        background-image: url("/themes/projproj/images/hero/high/hero-3.jpg"); } }
   .hero-image.slide-4 {
-    background-image: url("/themes/projproj/images/hero/hero-4.jpg");
     animation: fade4 40s infinite; }
+    @media screen and (max-width: 800px) {
+      .hero-image.slide-4 {
+        background-image: url("/themes/projproj/images/hero/low/hero-4.jpg"); } }
+    @media screen and (max-width: 2000px) and (min-width: 800px) {
+      .hero-image.slide-4 {
+        background-image: url("/themes/projproj/images/hero/med/hero-4.jpg"); } }
+    @media screen and (min-width: 2000px) {
+      .hero-image.slide-4 {
+        background-image: url("/themes/projproj/images/hero/high/hero-4.jpg"); } }
 
 @keyframes fade {
   0% {

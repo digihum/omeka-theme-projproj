@@ -25,10 +25,10 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
    </div>
  </div><hr/>
     <div class="item hentry" >
-     <div class="row">
+     <div class="row masonry-container">
     <?php foreach (loop('items') as $item): ?>
         <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
-       <div data-groups='[<?php echo implode(', ', $tags); ?>]' style="min-height:200px">
+       <div class="masonry-item" data-groups='[<?php echo implode(', ', $tags); ?>]' style="min-height:200px">
 
         <?php if (metadata('item', 'has thumbnail')): ?>
         <div class="item-img">
@@ -68,6 +68,7 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
        </div>
 
     <?php endforeach; ?>
+        <div class="sizer-element"></div>
       </div>
     </div><!-- end class="item hentry" -->
     <hr/>
@@ -83,5 +84,17 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
 </div><!-- end primary -->
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
+
+<script>
+var Shuffle = window.Shuffle;
+var element = document.querySelector('.masonry-layout');
+var sizer = element.querySelector('.sizer-element');
+
+var shuffleInstance = new Shuffle(element, {
+  itemSelector: '.masonry-item',
+  sizer: sizer // could also be a selector: '.my-sizer-element'
+});
+</script>
+
 
 <?php echo foot(); ?>

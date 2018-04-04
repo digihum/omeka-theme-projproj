@@ -498,18 +498,17 @@ body.exhibits nav#exhibit-pages {
       margin: 0;
       font-size: 2rem; }
 
-body#items.browse div.item.hentry .row {
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-  grid-row-gap: 5em;
-  grid-column-gap: 2em;
-  padding-top: 1em; }
+body#items.browse .masonry-item,
+body#items.browse .sizer-element {
+  width: 33%; }
   @media screen and (max-width: 980px) {
-    body#items.browse div.item.hentry .row {
-      grid-template-columns: 1fr 1fr; } }
+    body#items.browse .masonry-item,
+    body#items.browse .sizer-element {
+      width: 50%; } }
   @media screen and (max-width: 750px) {
-    body#items.browse div.item.hentry .row {
-      grid-template-columns: 1fr; } }
+    body#items.browse .masonry-item,
+    body#items.browse .sizer-element {
+      width: 100%; } }
 
 .item-img {
   text-align: center; }

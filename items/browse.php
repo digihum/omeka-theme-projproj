@@ -1,4 +1,4 @@
-<?php $pageTitle = __('Browse Items'); echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'browse')); ?>
+<?php $pageTitle = __('Browse Items'); echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items browse')); ?>
 
 <!-- item/browse.php -->
 

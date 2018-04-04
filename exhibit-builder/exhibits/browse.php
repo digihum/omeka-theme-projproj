@@ -1,5 +1,5 @@
 <?php
-$title = __('Browse Exhibits');
+$title = __('Tours');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
 <h1><?php echo $title; ?></h1>

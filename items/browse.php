@@ -25,7 +25,7 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
    </div>
  </div><hr/>
     <div class="item hentry" >
-     <div class="row masonry-container">
+     <div class="row masonry-layout">
     <?php foreach (loop('items') as $item): ?>
         <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
        <div class="masonry-item" data-groups='[<?php echo implode(', ', $tags); ?>]' style="min-height:200px">

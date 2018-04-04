@@ -9,7 +9,7 @@
     </div>
     <nav class="col-md-6">
         <div class="items-nav navigation" id="secondary-nav">
-	        <?php echo public_nav_items(); ?>
+            <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
 	    </div>
 	</nav>
     <div class="col-md-6">
@@ -21,7 +21,8 @@
     <div class="item hentry" >
      <div class="row">
     <?php foreach (loop('items') as $item): ?>
-       <div class="col-xs-12 col-md-6" style="min-height:200px">
+        <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
+       <div data-groups='[<?php echo implode(', ', $tags); ?>]' style="min-height:200px">
 
         <?php if (metadata('item', 'has thumbnail')): ?>
         <div class="item-img">

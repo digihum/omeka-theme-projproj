@@ -196,7 +196,8 @@ nav.horizontal {
 
 footer {
   background-color: #252022;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-top: 4rem; }
   footer img {
     width: 6em; }
   footer .copyright {
@@ -237,6 +238,9 @@ main#content div.container {
   margin: 0 auto;
   width: 100%;
   padding: 0 1.5em; }
+
+main {
+  min-height: 100vh; }
 
 header.hero {
   width: 100%;
@@ -524,9 +528,6 @@ body#items.browse .sizer-element {
     background: yellow;
     color: #565759;
     border-radius: 5px; }
-
-body.neatline.show .nl-fullscreen {
-  display: none; }
 
 body.neatline.show main#content .container {
   padding: 0 1em;

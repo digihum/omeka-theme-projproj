@@ -25,6 +25,17 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
    </div>
  </div><hr/>
     <div class="item hentry" >
+<div class="filter-array">
+   <span class="filter" data-tag="all">All</span>
+   <?php 
+       $allTags = array_map(function($tag) { return $tag['name']; }, get_records('Tag', [], 0));
+       $dateTags = preg_grep("/^[0-9]{4}s$/", $allTags);
+       sort($dateTags);
+       foreach ($dateTags as $dateTag) {
+           echo "<span class='filter' data-tag='" . $dateTag . "' >" . $dateTag . "</span>";
+       }
+   ?>
+</div>
      <div class="row masonry-layout">
     <?php foreach (loop('items') as $item): ?>
         <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
@@ -92,8 +103,15 @@ var sizer = element.querySelector('.sizer-element');
 
 var shuffleInstance = new Shuffle(element, {
   itemSelector: '.masonry-item',
-  sizer: sizer // could also be a selector: '.my-sizer-element'
+ supported: false
 });
+
+document.querySelectorAll('.filter').forEach((f) => {
+  f.addEventListener('click', (e) => {
+    shuffleInstance.filter(f.attributes.getNamedItem("data-tag").value);
+  });
+});
+
 </script>
 
 

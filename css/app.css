@@ -513,6 +513,18 @@ body#items.browse .sizer-element {
 .item-img {
   text-align: center; }
 
+.filter-array {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  padding-top: 0.5em; }
+  .filter-array .filter {
+    padding: 0.2em 0.8em;
+    cursor: pointer;
+    background: yellow;
+    color: #565759;
+    border-radius: 5px; }
+
 body.neatline.show .nl-fullscreen {
   display: none; }
 

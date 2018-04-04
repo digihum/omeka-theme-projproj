@@ -1,4 +1,10 @@
-<?php $pageTitle = __('Browse Items'); echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items browse')); ?>
+<?php
+
+$pageTitle = __('Archive'); 
+echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items browse'));
+queue_js_file('lib/shuffle');
+queue_js_file('item-browse');
+?>
 
 <!-- item/browse.php -->
 

@@ -1,7 +1,4 @@
-<?php 
-
-$pageTitle = __('Archive'); 
-echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'browse')); ?>
+<?php $pageTitle = __('Browse Items'); echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
 <!-- item/browse.php -->
 
@@ -24,15 +21,6 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'browse'
     <div class="item hentry" >
      <div class="row">
     <?php foreach (loop('items') as $item): ?>
-
-        <?php 
-            $collection = get_collection_for_item($item); 
-            if(!isset($collection)) {
-                continue;
-            }
-        ?>
-
-
        <div class="col-xs-12 col-md-6" style="min-height:200px">
 
         <?php if (metadata('item', 'has thumbnail')): ?>

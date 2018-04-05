@@ -3,16 +3,18 @@
   'bodyclass' => 'neatline show'
 )); ?>
 
+<div class="title-row">
 <!-- Exhibit title: -->
-<h1><?php echo nl_getExhibitField('title'); ?></h1>
+  <h1><?php echo nl_getExhibitField('title'); ?></h1>
 
-<!-- "View Fullscreen" link: -->
-<div class="pull-right">
-<?php echo nl_getExhibitLink(
-  null, 'fullscreen', __('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>'), array('class' => 'nl-fullscreen ', 'aria-label' => 'Close')
-); ?>
-</div>
+  <!-- "View Fullscreen" link: -->
+  <div class="fullscreen-link">
+  <?php echo nl_getExhibitLink(
+    null, 'fullscreen', __('<span class="fa fa-arrows-alt" aria-hidden="true"></span> Fullscreen'), array('class' => 'nl-fullscreen ', 'aria-label' => 'Close')
+  ); ?>
+  </div>
 <!-- Exhibit and description : -->
+</div>
 
 <div style="position:relative">
 <?php echo nl_getNarrativeMarkup(); ?>

@@ -273,6 +273,11 @@ body#home {
   }
 }
 
+.reel-container-dark {
+  @extend .reel-container;
+  background-image: url(/themes/projproj/images/reel-dark.svg);
+}
+
 .warwick-logo {
   position: absolute;
   right: 1rem;

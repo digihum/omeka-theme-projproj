@@ -420,7 +420,7 @@ body#home section#vpb {
       body#home section#vpb .featured-images div img {
         width: 100%; }
 
-.reel-container {
+.reel-container, .reel-container-dark {
   position: absolute;
   left: 0;
   right: 0;
@@ -430,8 +430,11 @@ body#home section#vpb {
   background-repeat: no-repeat;
   background-size: 40vw; }
   @media screen and (max-width: 980px) {
-    .reel-container {
+    .reel-container, .reel-container-dark {
       background-image: none; } }
+
+.reel-container-dark {
+  background-image: url(/themes/projproj/images/reel-dark.svg); }
 
 .warwick-logo {
   position: absolute;

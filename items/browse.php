@@ -109,8 +109,16 @@ var shuffleInstance = new Shuffle(element, {
 document.querySelectorAll('.filter').forEach((f) => {
   f.addEventListener('click', (e) => {
     shuffleInstance.filter(f.attributes.getNamedItem("data-tag").value);
+    // clear active class on all
+    document.querySelectorAll('.filter').forEach((g) => {
+        g.classList.remove('active');
+    });
+    // add active class
+    e.target.classList.add('active');
+    
   });
 });
+
 
 </script>
 

@@ -15,12 +15,9 @@
                     <div class="col-sm-3">
                         <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Contributor'), array('')); ?>
                     </div>
-                    <div class="col-sm-4">
-                        Description
-                    </div>
                 </div>
             </div>
-        
+            <div id="browse-collections" class="col-md-12">
             <?php foreach (loop('collections') as $collection): ?>
                 <div class="collection">
                     <div class="row">
@@ -47,6 +44,7 @@
                     </div>
                 </div>
             <?php endforeach; ?>
+</div>
         <?php else : ?>
             <p><?php echo 'No collections added, yet.'; ?></p>
         <?php endif; ?>

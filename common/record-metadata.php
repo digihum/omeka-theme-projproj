@@ -1,21 +1,31 @@
 <!-- record metadata template -->
-<table>
+<div class="element-set">
 <?php foreach ($elementsForDisplay as $setName => $setElements): ?>
-<tbody>
+
     <?php if ($showElementSetHeadings): ?>
-    <?php echo html_escape(__($setName)); ?></h4></div>
+    <h2>
+        <?php echo html_escape(__($setName)); ?>
+    </h2>
     <?php endif; ?>
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
-    <tr id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="row">
-        <th><?php echo html_escape(__($elementName)); ?></th>
-        <td>
+
+        
+
+    <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
+        <h3><?php echo html_escape(__($elementName)); ?></h3> 
+        
+        <?php if ($elementName=="Embed Code"): ?>
+            <?php foreach ($elementInfo['texts'] as $text): ?>
+                Embed Code: <div class="element-text"><?php echo $text; ?></div>
+            <?php endforeach; ?>
+        <?php else:   ?>
         <?php foreach ($elementInfo['texts'] as $text): ?>
             <div class="element-text"><?php echo $text; ?></div>
         <?php endforeach; ?>
-        </td>
+        <?php endif; ?>
         
-</tr><!-- end element -->
+        </div><!-- end element -->
     <?php endforeach; ?>
-</tbody>
+
 <?php endforeach; ?>
-</table>
+</div>

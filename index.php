@@ -29,7 +29,7 @@
         <p>A multimedia library of resources documenting the working lives of cinema projectionists in Britain
         from the 1890s to 2010s. Browse first hand audio accounts of professional practices and experiences,
         videos, photographs, documents, specialist magazine articles, and more</p>
-        <a href='/items/'>Explore our archives >></a>
+        <a href='/collections/browse'>Explore our archives >></a>
     </div>
 </section>
 

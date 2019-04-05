@@ -7,6 +7,7 @@ It is highly customised and has a lot of overrides from default views. There are
 
 ### Making changes to the CSS
 
-*  CSS is compiled from SASS code under `styles/` using `npm-sass`
-*  From the theme base directory run `npm style` to re-compile the stylesheet in `css/app.css`
+*  CSS is compiled from SASS code under `styles/`
+*  To run in a new environment, use `npm install` to pull down dependencies to run the `node-sass` compiler.
+*  From the theme base directory run `npm run style` to re-compile the stylesheet in `css/app.css`
 

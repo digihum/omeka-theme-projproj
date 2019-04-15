@@ -1,15 +1,13 @@
-Omeka Starter Theme
+Cinema Projectionist Theme 
 ===================
 
-A starter Omeka theme, built for Omeka v2.2.2, featuring Twitter Boostrap v3.3.2.
+A theme for the Projection Project research project 2014-2017. The theme underwent a transformation in 2018-2019 with additional impact funding to improve the visual impact, and simplify access to the items.
 
-*  Responsive grid system for cross-platform viewing
-*  Most page templates available
-*  Open and available for anyone to use
+It is highly customised and has a lot of overrides from default views. There are many references to Twitter Bootstrap, and the Javascript is still included across the site, though the latest theme CSS is hand-crafted and there is no Bootstrap CSS being used.
 
-### Questions? Requests?
-If you have questions or comments, feel free to contact hello@interactivemechanics.com, or submit issues/pull requests directly to the repository. If you have specific requests, let us know!
+### Making changes to the CSS
 
-### Recent additions
-*  9/15/15: Added in a custom Zender partial for creating Bootstrap navigations (with dropdowns)
-*  3/11/15: Added in the latest version of Twitter Bootstrap
+*  CSS is compiled from SASS code under `styles/`
+*  To run in a new environment, use `npm install` to pull down dependencies to run the `node-sass` compiler.
+*  From the theme base directory run `npm run style` to re-compile the stylesheet in `css/app.css`
+

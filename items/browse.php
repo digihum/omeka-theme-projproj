@@ -24,22 +24,41 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
     </div>
    </div>
  </div><hr/>
-    <div class="item hentry" >
-<div class="filter-array">
-   <span class="filter" data-tag="all">All</span>
+ Filter by Decade:
+<div class="item hentry" >
+<div id="filter-array-decades" class="filter-array">
+
+   <span class="filter-active" data-tag-decades="all">All</span>
    <?php 
        $allTags = array_map(function($tag) { return $tag['name']; }, get_records('Tag', [], 0));
        $dateTags = preg_grep("/^[0-9]{4}s$/", $allTags);
        sort($dateTags);
        foreach ($dateTags as $dateTag) {
-           echo "<span class='filter' data-tag='" . $dateTag . "' >" . $dateTag . "</span>";
+           echo "<span class='filter' data-tag-decades='" . $dateTag . "' >" . $dateTag . "</span>";
        }
    ?>
 </div>
+<hr/>
+Filter by Collection:
+<div id="filter-array-collections" class="filter-array">
+   <span class="filter-active" data-tag-collections="all">All</span>
+   <?php 
+$collections = get_records('Collection',[], 1000);
+set_loop_records('collections', $collections);
+foreach (loop('collections') as $collection)
+{
+    $collection_name = metadata($collection, array('Dublin Core', 'Title'));
+    echo "<span class='filter' data-tag-collections='" . $collection[id] . "' >" . $collection_name . "</span>";   
+}
+?>
+
+</div>
+<hr/>
+    <div class"row" id="nothing-to-see" style="visibility: hidden;">There are no items that match your filters.</div>
      <div class="row masonry-layout">
     <?php foreach (loop('items') as $item): ?>
         <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
-       <div class="masonry-item" data-groups='[<?php echo implode(', ', $tags); ?>]' style="min-height:200px">
+       <div class="masonry-item" data-decades='[<?php echo implode(', ', $tags); ?>]' data-collections='["<?php echo $item[collection_id]; ?>"]' style="min-height:200px">
 
         <?php if (metadata('item', 'has thumbnail')): ?>
         <div class="item-img">
@@ -65,7 +84,6 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
             <?php echo $description; ?>
         </div>
         <?php endif; ?>
-
 
         <?php if (metadata('item', 'has tags')): ?>
         <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
@@ -100,27 +118,42 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
 var Shuffle = window.Shuffle;
 var element = document.querySelector('.masonry-layout');
 var sizer = element.querySelector('.sizer-element');
+var current_decade_filter = "all";
+var current_collection_filter = "all";
 
 var shuffleInstance = new Shuffle(element, {
   itemSelector: '.masonry-item',
  supported: false
 });
 
-document.querySelectorAll('.filter').forEach((f) => {
-  f.addEventListener('click', (e) => {
-    shuffleInstance.filter(f.attributes.getNamedItem("data-tag").value);
-    // clear active class on all
-    document.querySelectorAll('.filter').forEach((g) => {
-        g.classList.remove('active');
-    });
-    // add active class
-    e.target.classList.add('active');
-    
+document.querySelectorAll('.filter, .filter-active').forEach((f) => { 
+  f.addEventListener('click', (e) => {  
+    if(f.attributes.getNamedItem("data-tag-decades") != null) 
+    {
+        current_decade_filter = f.attributes.getNamedItem("data-tag-decades").value;
+        var active_filters = document.getElementById("filter-array-decades").getElementsByClassName('filter-active');
+        for(var i = 0; i < active_filters.length; i++) {active_filters.item(i).className = "filter";}
+        f.className = "filter-active";
+    }
+    else 
+    {
+        current_collection_filter = f.attributes.getNamedItem("data-tag-collections").value;
+        var active_filters = document.getElementById("filter-array-collections").getElementsByClassName('filter-active');
+        for(var i = 0; i < active_filters.length; i++) {active_filters.item(i).className = "filter";}
+        f.className = "filter-active";
+    }
+    shuffleInstance.filter([current_decade_filter,current_collection_filter]); 
+
+
+    if(document.getElementsByClassName('shuffle-item--visible').length == 0) 
+    {
+        document.getElementById('nothing-to-see').style.visibility = "visible";
+    }
+    else 
+    {
+        document.getElementById('nothing-to-see').style.visibility = "hidden";
+    }
   });
 });
-
-
 </script>
-
-
 <?php echo foot(); ?>

@@ -32,6 +32,7 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
    <?php 
        $allTags = array_map(function($tag) { return $tag['name']; }, get_records('Tag', [], 0));
        $dateTags = preg_grep("/^[0-9]{4}s$/", $allTags);
+       array_push($dateTags, "1910s and 1920s");
        sort($dateTags);
        foreach ($dateTags as $dateTag) {
            echo "<span id='decade_span_".$dateTag."' class='filter' data-tag-decades='" . $dateTag . "' >" . $dateTag . "</span>";

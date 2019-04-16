@@ -8,6 +8,14 @@ h4 {
   font-weight: lighter;
   font-size: 16pt; }
 
+.tab-content > .tab-pane {
+  display: none;
+  visibility: hidden; }
+
+.tab-content > .active {
+  display: block;
+  visibility: visible; }
+
 body {
   color: white;
   background-color: #565759;

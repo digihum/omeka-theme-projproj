@@ -531,7 +531,7 @@ body#items.browse .sizer-element {
       width: 100%; } }
 
 .masonry-layout {
-  margin: -1em; }
+  margin-top: 1em; }
 
 /* attempt at a gutter
 .masonry-layout> {
@@ -562,9 +562,9 @@ body#items.browse .sizer-element {
 .filter-array {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 2em;
-  padding-top: 0.5em; }
+  justify-content: space-around;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
   .filter-array .filter {
     padding: 0.2em 0.8em;
     margin-bottom: 0.2em;
@@ -572,6 +572,15 @@ body#items.browse .sizer-element {
     background: yellow;
     color: #565759;
     border-radius: 5px; }
+  .filter-array .filter-active {
+    padding: 0.2em 0.8em;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+    background: #565759;
+    color: yellow;
+    border-radius: 5px;
+    border: 1px;
+    border-color: yellow; }
 
 body.neatline.show main#content .container {
   padding: 0 1em;

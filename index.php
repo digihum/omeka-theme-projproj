@@ -46,6 +46,7 @@ function get_random_featured_exhibits($num = 5, $hasImage = null)
 ?>
 
 <?php 
+
     $exhibits = get_random_featured_exhibits(3);
     if(count($exhibits) == 1) {
         $exhibits[1] = $exhibits[0];

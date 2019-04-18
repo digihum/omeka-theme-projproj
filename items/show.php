@@ -10,7 +10,6 @@ if (is_file( $fname )):
 else :
 ?>
     <?php if (metadata('item', 'Collection Name')): ?>
-
     <nav class="col-md-6">
         <div class="items-nav navigation" id="secondary-nav">
         

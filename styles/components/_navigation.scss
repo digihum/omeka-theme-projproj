@@ -12,6 +12,20 @@ nav {
     }
 }
 
+
+.nav-tabs {
+    border-bottom: 1px solid #dddddd;
+    }
+
+    .nav-tabs > li.active  {
+        border: 1px solid #dddddd;
+        border-bottom-color: #565759;
+        cursor: default;
+        padding-left: 7px;
+        padding-right: 7px;
+
+    }
+
 nav.vertical {
     li {
         display: block;

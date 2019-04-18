@@ -1,13 +1,13 @@
 <?php
 queue_js_file('lib/shuffle');
-queue_js_file('cookie_library');
+queue_js_file('js_utilities');
+queue_js_file('lozad');
+queue_js_file('polyfill.min');
 $pageTitle = __('Archive'); 
 echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items browse'));
 
 ?>
-
 <!-- item/browse.php -->
-
 <div class="row">
    <div class="page-header">
     <div class="col-xs-12">
@@ -24,7 +24,21 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
     </div>
    </div>
  </div><hr/>
- Filter by Decade:
+ Filter by Collection:
+<div id="filter-array-collections" class="filter-array">
+   <span id="col_span_all" class="filter-active" data-tag-collections="all">All</span>
+   <?php 
+$collections = get_records('Collection',[], 1000);
+set_loop_records('collections', $collections);
+foreach (loop('collections') as $collection)
+{
+    $collection_name = metadata($collection, array('Dublin Core', 'Title'));
+    echo "<span id='col_span_" .$collection["id"]."' class='filter' data-tag-collections='" . $collection["id"] . "' >" . $collection_name . "</span>";   
+}
+?>
+</div>
+<hr/>
+Filter by Decade:
 <div class="item hentry" >
 <div id="filter-array-decades" class="filter-array">
 
@@ -38,20 +52,6 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
            echo "<span id='decade_span_".$dateTag."' class='filter' data-tag-decades='" . $dateTag . "' >" . $dateTag . "</span>";
        }
    ?>
-</div>
-<hr/>
-Filter by Collection:
-<div id="filter-array-collections" class="filter-array">
-   <span id="col_span_all" class="filter-active" data-tag-collections="all">All</span>
-   <?php 
-$collections = get_records('Collection',[], 1000);
-set_loop_records('collections', $collections);
-foreach (loop('collections') as $collection)
-{
-    $collection_name = metadata($collection, array('Dublin Core', 'Title'));
-    echo "<span id='col_span_" .$collection["id"]."' class='filter' data-tag-collections='" . $collection["id"] . "' >" . $collection_name . "</span>";   
-}
-?>
 
 </div>
 <hr/>
@@ -65,12 +65,25 @@ foreach (loop('collections') as $collection)
 
         <?php if (metadata('item', 'has thumbnail')): ?>
         <div class="item-img">
-            <?php echo link_to_item(item_image('square_thumbnail')); ?>
+        <?php 
+            $files = $item->Files;
+            echo "<a href='/items/show/".$item["id"]."'>";
+            echo "<img src='/themes/projproj/images/holder.png' class='lozad'  width='200px' alt='".metadata($files[0], 'display_title')."' ";
+            echo "title='".metadata($files[0], 'display_title')."' data-src='". metadata($files[0], 'square_thumbnail_uri')."'>"; 
+            echo "</a>" ;
+            echo "<noscript>" . link_to_item(item_image('square_thumbnail')) . "</noscript>";
+          ?>
         </div>
         <br />
         <?php else: ?>
             <div class="item-img">
-                <?php echo link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />"); ?>
+            <?php 
+                echo "<a href='/items/show/".$item["id"]."'>";
+                echo "<img src='/themes/projproj/images/holder.png' class='lozad'  width='200px' alt='".metadata($files[0], 'display_title')."' ";
+                echo "title='".metadata($files[0], 'display_title')."' data-src='/themes/projproj/images/reel.svg' width='200px'>"; 
+                echo "</a>" ; 
+                echo "<noscript>" . link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />") . "</noscript>";
+            ?>
             </div>
             <br />
             
@@ -116,8 +129,8 @@ foreach (loop('collections') as $collection)
 </div><!-- end primary -->
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
-
 <script>
+
 var Shuffle = window.Shuffle;
 var element = document.querySelector('.masonry-layout');
 var sizer = element.querySelector('.sizer-element');
@@ -128,23 +141,30 @@ var shuffleInstance = new Shuffle(element, {
  supported: false
 });
 
-var current_decade_filter = getCookie("decade_filter");
-var current_collection_filter = getCookie("collection_filter");
-if (current_decade_filter && current_collection_filter) {shuffle(current_decade_filter,current_collection_filter);}
+var current_decade_filter = "all";
+if(getCookie("decade_filter")) {current_decade_filter = getCookie("decade_filter");}
+
+var current_collection_filter = "all";
+if(getCookie("collection_filter")) {current_collection_filter = getCookie("collection_filter");}
+
+if (current_decade_filter != "all" || current_collection_filter != "all") {shuffle(current_decade_filter,current_collection_filter);}
 else {document.getElementById("total_items").innerHTML = document.getElementsByClassName('shuffle-item--visible').length + " total";}
 
 //Add event listeners to filter buttons.
-document.querySelectorAll('.filter, .filter-active').forEach((f) => { 
-  f.addEventListener('click', (e) => { 
-    if(f.attributes.getNamedItem("data-tag-decades") != null) 
-        {current_decade_filter = f.attributes.getNamedItem("data-tag-decades").value;}
+var elements = document.querySelectorAll('.filter, .filter-active')
+elements = [].slice.call(elements);
+elements.forEach(function(element) {
+    element.addEventListener('click', function(){ 
+    //debugger;
+    if(element.attributes.getNamedItem("data-tag-decades") != null) 
+        {current_decade_filter = element.attributes.getNamedItem("data-tag-decades").value;}
     else
-        {current_collection_filter = f.attributes.getNamedItem("data-tag-collections").value;}
+    {current_collection_filter = element.attributes.getNamedItem("data-tag-collections").value;}
     //Store current filter selections then shuffle.
     setCookie('decade_filter', current_decade_filter, 4);
     setCookie('collection_filter', current_collection_filter, 4);
     shuffle(current_decade_filter,current_collection_filter);
-  });
+    });
 });
 
 //Function to shuffle filtered items and set UI text.
@@ -172,5 +192,8 @@ function shuffle (current_decade_filter, current_collection_filter)
     for(var i = 0; i < active_filters.length; i++) {active_filters.item(i).className = "filter";}
     document.getElementById("col_span_" + current_collection_filter).className = "filter-active";
 }
+
+const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+observer.observe();
 </script>
 <?php echo foot(); ?>

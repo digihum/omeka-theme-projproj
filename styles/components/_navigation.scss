@@ -19,15 +19,32 @@ nav {
 
     }
 
-    .nav-tabs > li.active  {
+    .nav-tabs > li {
+        border: 1px solid transparent;
+        border-radius: 0.2em;
+        cursor: default; 
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+      
+      .nav-tabs > li.active {
         border: 1px solid #dddddd;
         border-bottom-color: #565759;
-        border-radius: 2px;
-        cursor: default;
-        padding-left: 7px;
-        padding-right: 7px;
-
-    }
+        border-top-left-radius: 0.1em;
+        border-top-right-radius: 0.1em;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+        cursor: default; }
+      
+      
+      .nav-tabs > li:hover:not(.active) {
+        border: 1px solid #858687;
+        border-bottom: 1px solid #dddddd;
+        border-top-left-radius: 0.1em;
+        border-top-right-radius: 0.1em;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+        cursor: default; }
 
 nav.vertical {
     li {

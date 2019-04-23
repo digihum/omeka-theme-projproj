@@ -2,11 +2,18 @@
 queue_js_file('lib/shuffle');
 queue_js_file('js_utilities');
 queue_js_file('lozad');
-queue_js_file('polyfill.min');
 $pageTitle = __('Archive'); 
 echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items browse'));
 
 ?>
+<script type="text/javascript">
+    debugger;
+    if(detectIE())
+    {   
+       document.write('<script type="text/javascript" src="/themes/projproj/javascripts/polyfill.min.js"><\/script>');
+    }
+</script>
+
 <!-- item/browse.php -->
 <div class="row">
    <div class="page-header">

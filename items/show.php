@@ -80,7 +80,7 @@ else :
     <!-- The following prints a list of all tags associated with the item -->
 
 </section>
-<section role="tabpanel" class="tab-pane active" id="academic">
+<section role="tabpanel" class="tab-pane" id="academic">
 
     <div class="element-texts">
         <?php echo all_element_texts('item'); ?>
@@ -92,7 +92,7 @@ else :
             <h3><?php echo __('Citation'); ?></h3>
             <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
         </div>
-        
+        <hr/>
         <div id="item-output-formats" class="element">
             <h3><?php echo __('Output Formats'); ?></h3>
             <div class="element-text"><?php echo output_format_list(); ?></div>

@@ -7,6 +7,8 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <?php echo pagination_links(); ?>
 
+<?php echo get_theme_option('tours_introduction_text'); ?>
+
 <div class="exhibit-list">
 <?php $exhibitCount = 0; ?>
 <?php foreach (loop('exhibit') as $exhibit): ?>

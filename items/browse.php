@@ -62,6 +62,10 @@ Filter by Decade:
 
 </div>
 <hr/>
+    <div>
+        <?php echo get_theme_option('archive_introduction_text'); ?>
+
+    </div>
     <div class="row" id="nothing-to-see" style="visibility: hidden;">There are no items that match your filters.</div>
      <div class="row masonry-layout">
     <?php foreach (loop('items') as $item): 
@@ -79,15 +83,15 @@ Filter by Decade:
             echo "title='".metadata($files[0], 'display_title')."' data-src='". metadata($files[0], 'square_thumbnail_uri')."'>"; 
             echo "</a>" ;
             echo "<noscript>" . link_to_item(item_image('square_thumbnail')) . "</noscript>";
-          ?>
+           ?>
         </div>
         <br />
         <?php else: ?>
             <div class="item-img">
             <?php 
                 echo "<a href='/items/show/".$item["id"]."'>";
-                echo "<img src='/themes/projproj/images/holder.png' class='lozad'  width='200px' alt='".metadata($files[0], 'display_title')."' ";
-                echo "title='".metadata($files[0], 'display_title')."' data-src='/themes/projproj/images/reel.svg' width='200px'>"; 
+                echo "<img src='/themes/projproj/images/holder.png' class='lozad'  width='200px' alt='film reel' ";
+                echo "title='film reel' data-src='/themes/projproj/images/reel.svg' width='200px'>"; 
                 echo "</a>" ; 
                 echo "<noscript>" . link_to_item("<img src='/themes/projproj/images/reel.svg' width='200px' />") . "</noscript>";
             ?>

@@ -6,9 +6,7 @@
                 <h4>About</h4>
                 <ul>
                     <li><a href="/about">About the Project</a></li>
-                    <li><a href="/advisory-board">Advisory Board</a></li>
-                    <li><a href="/project-team">Project Team</a></li>
-                    <li><a href="/project-partners">Project Partners</a></li>
+                    <li><a href="/accessibility">Accessibility Statement</a></li>
                 </ul>
             </div>
 

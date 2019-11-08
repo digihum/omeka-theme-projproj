@@ -1,6 +1,12 @@
 body.neatline #neatline {
   background-color: #222 !important; /*just take the edge off black.*/
 }
+body.neatline.show #waypoints>ul>a:first-child {
+  display: none !important; /* hide the exit fullscreen from fullscreen page */
+}
+body.neatline.fullscreen #waypoints>ul>a:first-child {
+  display: block; /* hide the exit fullscreen from fullscreen page */
+}
 
 @media (max-width: 48em) {
   #OpenLayers_Control_PanZoom_2 {

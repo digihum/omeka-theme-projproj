@@ -25,7 +25,7 @@
             |
             <span><a href="http://warwick.ac.uk/terms/general">Terms</a></span> 
             | 
-            <span><a href="http://warwick.ac.uk/cookies">Cookies</a></span>
+            <span><a href="#" data-cc="c-settings">Cookies</a></span>
         </div>
     </footer>
     <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>

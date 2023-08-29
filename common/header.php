@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo get_html_lang(); ?>">
+<html lang="<?php echo get_html_lang(); ?>" class="theme_turquoise">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

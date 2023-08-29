@@ -7,7 +7,6 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
 
 ?>
 <script type="text/javascript">
-    debugger;
     if(detectIE())
     {   
        document.write('<script type="text/javascript" src="/themes/projproj/javascripts/polyfill.min.js"><\/script>');
@@ -71,8 +70,8 @@ Filter by Decade:
     <?php foreach (loop('items') as $item): 
         if(!($item["collection_id"])) continue;
         ?>
-        <?php $tags = array_map(function($tag) { return '"' . $tag['name'] . '"'; }, $item->Tags);?>
-       <div class="masonry-item" data-decades='[<?php echo implode(', ', $tags); ?>]' data-collections='["<?php echo $item["collection_id"]; ?>"]' style="min-height:200px">
+        <?php $tags = array_map(function($tag) { return '&quot;' . $tag['name'] . '&quot;'; }, $item->Tags);?>
+       <div class='test masonry-item' data-decades='[<?php echo str_replace("'", "",implode(',', $tags)); ?>]' data-collections='["<?php echo $item["collection_id"]; ?>"]' style="min-height:200px">
 
         <?php if (metadata('item', 'has thumbnail')): ?>
         <div class="item-img">
@@ -158,7 +157,9 @@ if(getCookie("decade_filter")) {current_decade_filter = getCookie("decade_filter
 var current_collection_filter = "all";
 if(getCookie("collection_filter")) {current_collection_filter = getCookie("collection_filter");}
 
-if (current_decade_filter != "all" || current_collection_filter != "all") {shuffle(current_decade_filter,current_collection_filter);}
+if (current_decade_filter != "all" || current_collection_filter != "all") {
+    shuffle(current_decade_filter,current_collection_filter);
+}
 else {document.getElementById("total_items").innerHTML = document.getElementsByClassName('shuffle-item--visible').length + " total";}
 
 //Add event listeners to filter buttons.
@@ -166,7 +167,6 @@ var elements = document.querySelectorAll('.filter, .filter-active')
 elements = [].slice.call(elements);
 elements.forEach(function(element) {
     element.addEventListener('click', function(){ 
-    //debugger;
     if(element.attributes.getNamedItem("data-tag-decades") != null) 
         {current_decade_filter = element.attributes.getNamedItem("data-tag-decades").value;}
     else

@@ -82,7 +82,7 @@ endif; ?>
 <section id="vpb">
     <div class="featured-images">
         <div>
-            <img src="https://projectionproject.warwick.ac.uk/themes/projproj/images/vpb_frontpage_sm.png" />
+            <img src="https://projectionproject.warwick.ac.uk/themes/projproj/images/vpb_frontpage_sm.png" alt="screenshot of a virtual proejction box"/>
         </div>      
     </div>
     <div class="description">

@@ -13,9 +13,9 @@
             <div class="image-list">
                 <h4>Partners</h4>
                 <ul>
-                    <li><a href="https://ahrc.ukri.org"><img src="/themes/projproj/images/partners/ahrc_square.png" /></a></li>
-                    <li><a href="https://www.bfi.org.uk"><img src="/themes/projproj/images/partners/bfi_square.png" /></a></li>
-                    <li><a href="https://flatpackfestival.org.uk"><img src="/themes/projproj/images/partners/flatpack_square.png" /></a></li>
+                    <li><a href="https://ahrc.ukri.org"><img src="/themes/projproj/images/partners/ahrc_square.png" alt="Arts and Humanities Research Council"/></a></li>
+                    <li><a href="https://www.bfi.org.uk"><img src="/themes/projproj/images/partners/bfi_square.png" alt="British Film Institute"/></a></li>
+                    <li><a href="https://flatpackfestival.org.uk"><img src="/themes/projproj/images/partners/flatpack_square.png" alt="Flatpack Festival"/></a></li>
                 </ul>
             </div>
 

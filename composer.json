@@ -23,7 +23,7 @@
   ],
   "license": "Copyright",
   "readme": "README.md",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "require": {
     "omeka/omeka": ">=2.0"
   }

@@ -8,6 +8,10 @@
       "role": "Academic Technologist"
     },
     {
+      "name": "Benjamin Blackham",
+      "role": "Academic Technologist"
+    },
+    {
       "name": "Steve Ranford",
       "email": "steve.ranford@warwick.ac.uk",
       "role": "Research Software Engineer"
@@ -19,7 +23,7 @@
   ],
   "license": "Copyright",
   "readme": "README.md",
-  "version": "0.1",
+  "version": "0.2",
   "require": {
     "omeka/omeka": ">=2.0"
   }

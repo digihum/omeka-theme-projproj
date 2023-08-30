@@ -1,0 +1,26 @@
+{
+  "name": "digihum/projproj",
+  "type": "omeka-theme",
+  "description": "Theme for cinemaprojectionist.co.uk.",
+  "authors": [
+    {
+      "name": "Tim Hollies",
+      "role": "Academic Technologist"
+    },
+    {
+      "name": "Steve Ranford",
+      "email": "steve.ranford@warwick.ac.uk",
+      "role": "Research Software Engineer"
+    },
+    {
+      "name": "Creative Triangle",
+      "role": "Website Design"
+    },
+  ],
+  "license": "Copyright",
+  "readme": "README.md",
+  "version": "0.1",
+  "require": {
+    "omeka/omeka": ">=2.0"
+  }
+}

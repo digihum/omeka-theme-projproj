@@ -17,7 +17,7 @@ echo head(array('title' => $pageTitle, 'bodyid'=>'items','bodyclass' => 'items b
 <div class="row">
    <div class="page-header">
     <div class="col-xs-12">
-	    <h1><?php echo $pageTitle." ";?>(<span id="total_items"></span>)
+	    <h2><?php echo $pageTitle." ";?>(<span id="total_items"></span>)</h2>
     </div>
     <nav class="col-md-6">
         <div class="items-nav navigation" id="secondary-nav">

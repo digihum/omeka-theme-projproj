@@ -19,11 +19,11 @@
     {
       "name": "Creative Triangle",
       "role": "Website Design"
-    },
+    }
   ],
   "license": "Copyright",
   "readme": "README.md",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "require": {
     "omeka/omeka": ">=2.0"
   }
